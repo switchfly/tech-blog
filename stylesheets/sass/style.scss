@@ -34,6 +34,11 @@ a.image-link {
 	}
 }
 
+img.author {
+	border: 2px solid $line-color;
+	border-top: none;
+}
+
 p, ul, ol {
 	margin-bottom: 18px;
 } 

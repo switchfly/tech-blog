@@ -696,6 +696,10 @@ a.image-link {
   a.image-link:hover img {
     opacity: 1; }
 
+img.author {
+  border: 2px solid #e4e4e4;
+  border-top: none; }
+
 p, ul, ol {
   margin-bottom: 18px; }
 
