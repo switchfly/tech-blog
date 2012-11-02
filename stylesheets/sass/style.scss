@@ -7,8 +7,10 @@ html {
 }
 
 body {
-	color: $text-color; 
-	overflow: hidden;
+	font: #{$font-size}/#{$line-height} "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	color: $text-color; 
+	letter-spacing: 0.03em;	
+	overflow: hidden;	
 }
 
 /*general*/
@@ -28,6 +30,8 @@ a.image-link {
 	margin-bottom: 2px;
 	img {
 		opacity: 0.9;
+		width: 60px;
+		height: auto;
 	}
 	&:hover img {
 		opacity: 1;
@@ -36,7 +40,6 @@ a.image-link {
 
 img.author {
 	border: 2px solid $line-color;
-	border-top: none;
 }
 
 p, ul, ol {
@@ -45,6 +48,28 @@ p, ul, ol {
 
 em {
 	font-style: italic;
+}
+
+/* ---------
+homepage
+-----------*/
+
+/*blog home*/
+.post-home {
+	border-top: 1px solid $line-color;
+	overflow: hidden;
+	padding-bottom: 30px;	
+	h1 {
+		font-size: $font-size * 2;
+		line-height: ($font-size * 2) + 6;
+		font-weight: $medium;
+		letter-spacing: 1px;
+		margin-top: 12px;
+		color: #c9c9c9;
+	}
+	.post-summary {
+		margin-top: 16px;
+	}
 }
 
 @import "boilerplate"; 
