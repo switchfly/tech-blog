@@ -1,6 +1,6 @@
-@import "/tech-blog/stylesheets/sass/skeleton/base"; 
-@import "/tech-blog/stylesheets/sass/skeleton/layout"; 
-@import "/tech-blog/stylesheets/sass/skeleton/skeleton"; 
+@import "../skeleton/base"; 
+@import "..skeleton/layout"; 
+@import "..skeleton/skeleton"; 
 @import "global-styles"; 
 
 html {
