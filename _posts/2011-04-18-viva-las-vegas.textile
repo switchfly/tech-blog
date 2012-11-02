@@ -1,12 +1,13 @@
+---
 layout: post
 title: Viva Las Vegas – Topguest and Total Rewards
 author: Scott Galloway
 author-image: scottgalloway.jpg
 author-link: http://www.linkedin.com/in/scottgalloway
 summary: We are pleased to announce a new partnership with Caesars Entertainment Corporation; the world’s largest casino entertainment company. Earn Total Reward Points by checking-in or taking a photo at one of Caesars eight casinos in Las Vegas.
--
+---
 
-{{ page.title }}
+h1. {{ page.title }}
 We are pleased to announce a new partnership with Caesars Entertainment Corporation; the world’s largest casino entertainment company. Earn Total Reward Points by checking-in or taking a photo at one of Caesars eight casinos in Las Vegas.
 
 Caesars Palace
