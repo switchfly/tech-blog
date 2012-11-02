@@ -22,6 +22,18 @@ a:hover {
 	color: $link-hover-color;
 }
 
+a.image-link {
+	display: block;
+	background: black;
+	margin-bottom: 2px;
+	img {
+		opacity: 0.9;
+	}
+	&:hover img {
+		opacity: 1;
+	}
+}
+
 p, ul, ol {
 	margin-bottom: 18px;
 } 

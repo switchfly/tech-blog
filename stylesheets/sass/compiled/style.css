@@ -687,6 +687,15 @@ a, a:active, a:visited {
 a:hover {
   color: #095791; }
 
+a.image-link {
+  display: block;
+  background: black;
+  margin-bottom: 2px; }
+  a.image-link img {
+    opacity: 0.9; }
+  a.image-link:hover img {
+    opacity: 1; }
+
 p, ul, ol {
   margin-bottom: 18px; }
 
