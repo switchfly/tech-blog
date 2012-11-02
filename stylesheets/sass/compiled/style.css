@@ -1,7 +1,7 @@
 /*
-Syntax error: File to import not found or unreadable: skeleton-base.
+Syntax error: File to import not found or unreadable: skeleton-skeleton.
               Load path: C:/Users/sgalloway/Desktop/Switchfly_Tech_Blog/git/tech-blog/stylesheets/sass
-        on line 1 of style.scss
+        on line 3 of style.scss
 
 1: @import "skeleton-base"; 
 2: @import "skeleton-layout"; 
@@ -9,9 +9,11 @@ Syntax error: File to import not found or unreadable: skeleton-base.
 4: @import "global-styles"; 
 5: 
 6: html {
+7: 	-webkit-font-smoothing: antialiased; 
+8: }
 
 Backtrace:
-style.scss:1
+style.scss:3
 C:/dev/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.35/lib/sass/tree/import_node.rb:64:in `rescue in import'
 C:/dev/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.35/lib/sass/tree/import_node.rb:42:in `import'
 C:/dev/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.0.alpha.35/lib/sass/tree/import_node.rb:25:in `imported_file'
@@ -63,4 +65,4 @@ C:/dev/Ruby193/bin/sass:19:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: skeleton-base.\A               Load path: C:/Users/sgalloway/Desktop/Switchfly_Tech_Blog/git/tech-blog/stylesheets/sass\A         on line 1 of style.scss\A \A 1: @import \"skeleton-base\"; \A 2: @import \"skeleton-layout\"; \A 3: @import \"skeleton-skeleton\"; \A 4: @import \"global-styles\"; \A 5: \A 6: html {"; }
+  content: "Syntax error: File to import not found or unreadable: skeleton-skeleton.\A               Load path: C:/Users/sgalloway/Desktop/Switchfly_Tech_Blog/git/tech-blog/stylesheets/sass\A         on line 3 of style.scss\A \A 1: @import \"skeleton-base\"; \A 2: @import \"skeleton-layout\"; \A 3: @import \"skeleton-skeleton\"; \A 4: @import \"global-styles\"; \A 5: \A 6: html {\A 7: 	-webkit-font-smoothing: antialiased; \A 8: }"; }
