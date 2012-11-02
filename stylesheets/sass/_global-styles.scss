@@ -1,0 +1,18 @@
+//Colors
+$text-color: #3e3f3f;
+$link-color: #2e8cd2;
+$link-hover-color: #095791;
+
+//Rounded corners
+$border-radius: 5px;
+@mixin round-corners($dist) {
+  -webkit-border-radius: $dist;
+  -moz-border-radius: $dist;
+  border-radius: $dist;
+}
+
+//Text shadow
+$shadow-color: #434347; $shadow-x: 1px; $shadow-y: 1px; $shadow-blur: 2px;
+@mixin shadow($color, $x, $y, $blur) {
+	text-shadow: $color $x $y $blur;
+}

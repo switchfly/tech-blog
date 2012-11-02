@@ -1,0 +1,33 @@
+@import "960";
+@import "reset"; 
+@import "global-styles"; 
+
+html {
+	-webkit-font-smoothing: antialiased; 
+}
+
+body {
+	color: $text-color; 
+	overflow: hidden;
+}
+
+/*general*/
+
+a, a:active, a:visited {
+	color: $link-color;	
+	text-decoration: none;
+}
+
+a:hover {
+	color: $link-hover-color;
+}
+
+p, ul, ol {
+	margin-bottom: 18px;
+} 
+
+em {
+	font-style: italic;
+}
+
+@import "boilerplate"; 
