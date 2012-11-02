@@ -851,6 +851,12 @@ p, ul, ol {
 em {
   font-style: italic; }
 
+footer {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 960px; }
+
 /* ---------
 homepage
 -----------*/
