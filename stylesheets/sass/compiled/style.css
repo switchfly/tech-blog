@@ -407,6 +407,9 @@ legend span {
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  nav {
+    width: 124px; } }
 /* All Mobile Sizes (devices and browser) */
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
