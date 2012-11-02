@@ -1,5 +1,6 @@
-@import "960";
-@import "reset"; 
+@import "/tech-blog/stylesheets/sass/skeleton/base"; 
+@import "/tech-blog/stylesheets/sass/skeleton/layout"; 
+@import "/tech-blog/stylesheets/sass/skeleton/skeleton"; 
 @import "global-styles"; 
 
 html {
@@ -73,5 +74,3 @@ homepage
 		margin-top: 16px;
 	}
 }
-
-@import "boilerplate"; 
