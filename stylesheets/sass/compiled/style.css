@@ -854,6 +854,9 @@ em {
 .container {
   padding-top: 60px; }
 
+#sidebar nav {
+  position: fixed; }
+
 footer {
   margin: 0 auto;
   padding: 0;
