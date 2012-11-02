@@ -1,3 +1,10 @@
 safe: true
 lsi: false
 pygments: true
+markdown: rdiscount
+permalink: /:year/:month/:title.html
+multiviews: false
+sass: true
+haml: true
+post_defaults:
+  layout: post
