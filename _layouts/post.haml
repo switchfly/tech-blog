@@ -1,0 +1,26 @@
+---
+layout: default
+---
+#post
+
+  =header page.title
+  %p.subtitle.metadata.vcard
+    Published
+    %abbr.published{:title=>page.date.iso8601}
+      = page.date.strftime("%B %d, %Y")
+    / in
+    / = tag_links(page.tags), "."
+
+  -# Without the squiggly, Haml will indent highlighted code.
+  ~ content
+
+  .clear
+    #previous_and_next
+      - if page.next
+        %p
+          %strong Next:
+          =post_link(page.next)
+      - if page.previous
+        %p
+          %strong Previous:
+          =post_link(page.previous)
