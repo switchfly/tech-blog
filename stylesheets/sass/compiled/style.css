@@ -850,6 +850,10 @@ p, ul, ol {
 em {
   font-style: italic; }
 
+/* General Page Styles */
+.container {
+  padding-top: 60px; }
+
 footer {
   margin: 0 auto;
   padding: 0;
