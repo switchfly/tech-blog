@@ -875,8 +875,7 @@ footer {
   padding: 0;
   position: relative; }
 
-.container,
-#sidebar nav {
+.container {
   padding-top: 110px; }
 
 #sidebar nav {
