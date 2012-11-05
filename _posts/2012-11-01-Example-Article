@@ -1,12 +1,12 @@
 ---
 layout: post
-author: 
+author: SAMPLE AUTHOR
 author-image: 
 author-link: 
 date:
-title: 
+title: SAMPLE ARTICLE
 summary: 
-published: 
+published: true
 ---
 h1. Header 1
 h2. Header 2
