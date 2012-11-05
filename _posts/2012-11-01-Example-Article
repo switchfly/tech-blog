@@ -1,12 +1,9 @@
 ---
 layout: post
 author: SAMPLE AUTHOR
-author-image: 
-author-link: 
-date:
+
 title: SAMPLE ARTICLE
-summary: 
-published: true
+summary: This is a paragraph, which is text surrounded by whitespace.
 ---
 h1. Header 1
 h2. Header 2
