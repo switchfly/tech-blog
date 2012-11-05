@@ -8,6 +8,7 @@ summary: We are pleased to announce a new partnership with Caesars Entertainment
 ---
 
 h1. {{ page.title }}
+
 We are pleased to announce a new partnership with Caesars Entertainment Corporation; the world’s largest casino entertainment company. Earn Total Reward Points by checking-in or taking a photo at one of Caesars eight casinos in Las Vegas.
 
 Caesars Palace
