@@ -4,13 +4,14 @@ layout: default
 
 <!-- Wraps each post on the post page -->
 <article id="post">
-  <div class="meta-data grid_2 alpha">
+  <div class="three columns alpha post-info">
     <a class="image-link" href="{{ page.author-link }}"><img class="author" src="/tech-blog/images/{{ page.author-image }}" alt="{{ page.author }}" /></a>            
     <div class="clear"></div>            
     <a class="author-link" href="{{ page.author-link }}">{{ page.author }}</a>
     <div class="date">{{ page.date | date: "%d %B %Y" }}</div>
+    <div class="category"><a href="/tech-blog/{{ post.category }}.html">{{ post.category }}</a></div>
   </div>
-  <div class="grid_8 omega prepend_2 post-body">
+  <div class="nine columns omega post-body">
     {{ content }}
   </div>
 </article>
