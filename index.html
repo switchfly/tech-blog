@@ -4,24 +4,24 @@ title: Switchfly Technical Blog
 ---
 <!-- index.html - Wraps each post on main page -->
 {% for post in site.posts %}
-  <article class="post-home twelve columns">
-    <div class="three columns alpha">
-      <a class="image-link" href="{{ post.author-link }}"><img class="author" src="/tech-blog/images/{{ post.author-image }}" alt="{{ post.author }}" /></a>
-      <div class="clear"></div>
-      <a class="author-link" href="{{ post.author-link }}">{{ post.author }}</a>
-      <div class="date">{{ post.date | date: "%d %B %Y" }}</div>
-    </div>
-    <div class="nine columns omega">
-      <h1>
-        {% if post.summary-only %}
-           {{ post.title }}
-        {% else %}
-           <a href="/tech-blog/{{ post.url }}">{{ post.title }}</a>
-        {% endif %}
-      </h1>
-    </div>
-    <div class="twelve columns">
-      <p class="post-summary">{{ post.summary }}</p>
-    </div>
-  </acticle>
+  <section class="post-home twelve columns">
+      <div class="three columns alpha">
+        <a class="image-link" href="{{ post.author-link }}"><img class="author" src="/tech-blog/images/{{ post.author-image }}" alt="{{ post.author }}" /></a>
+        <div class="clear"></div>
+        <a class="author-link" href="{{ post.author-link }}">{{ post.author }}</a>
+        <div class="date">{{ post.date | date: "%d %B %Y" }}</div>
+      </div>
+      <div class="nine columns omega">
+        <h1>
+          {% if post.summary-only %}
+             {{ post.title }}
+          {% else %}
+             <a href="/tech-blog/{{ post.url }}">{{ post.title }}</a>
+          {% endif %}
+        </h1>
+      </div>
+      <div class="twelve columns">
+        <p class="post-summary">{{ post.summary }}</p>
+      </div>
+  </section>
 {% endfor %}
