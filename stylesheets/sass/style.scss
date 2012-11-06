@@ -27,6 +27,11 @@ a:hover {
 	color: $link-hover-color;
 }
 
+img {
+	margin: 1em 0;
+	border: 5px solid #ccc;		
+}
+
 a.image-link {
 	display: block;
 	margin-bottom: 2px;
