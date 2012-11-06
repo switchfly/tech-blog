@@ -12,11 +12,17 @@ h1. {{ page.title }}
 
 We are pleased to announce a new partnership with Caesars Entertainment Corporation; the world’s largest casino entertainment company. Earn Total Reward Points by checking-in or taking a photo at one of Caesars eight casinos in Las Vegas.
 
-<pre>
+<pre class="code">
 
-<div class="date">blah</div>
+	<div class="date">blah</div>
 
 </pre>
+
+{% highlight html linenos %}
+<div class="date">
+	<span>blah</span>
+</div>
+{% endhighlight %}
 
 Caesars Palace
 Planet Hollywood
