@@ -1,17 +1,19 @@
 ---
 layout: post
-title: Neque porro quisquam
+title: Sample post
 author: Scott Galloway
 author-image: scottgalloway.jpg
 author-link: http://www.linkedin.com/in/scottgalloway
 category: web-development
-summary: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+summary: Should show a bunch of textile markup examples
 ---
 
 h1. {{ page.title }}
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus interdum auctor. Fusce sed odio ut erat vehicula suscipit at id eros. Donec quis velit velit. Fusce gravida lacinia fringilla. Fusce rhoncus turpis sit amet diam euismod consequat. Nullam nec est lacus, ac malesuada orci. Curabitur fringilla odio nulla. Donec sagittis venenatis vulputate. Proin pulvinar justo vel nunc consectetur auctor eget eget nulla. Nullam quis sapien eu elit dignissim placerat ut ut arcu. Duis pretium nisi justo, a dictum massa. Cras semper dui ac nisi faucibus eu luctus dui consequat. Duis pretium iaculis augue, sed elementum eros vulputate scelerisque. Suspendisse eget ipsum eu lorem semper vulputate. Quisque molestie sagittis tellus quis pretium. Etiam at libero et felis pulvinar ultricies.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus interdum auctor. Here is a link to "Warped":http://warpedvisions.org.
+
+Now some inline markup like _italics_,  *bold*, and <code>code()</code>. 
 
 bq. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!
 
@@ -33,4 +35,18 @@ bq. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
 
 !http://lorempixel.com/350/250/(this is the alt text)!
 
-Phasellus urna nunc, pulvinar scelerisque hendrerit et, tempor id leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris enim risus, pretium at venenatis ullamcorper, tincidunt sed sem. Etiam magna ipsum, facilisis sed iaculis nec, rhoncus eget nisl. Morbi nec urna tortor. Praesent vel nisl vel urna volutpat pharetra. Suspendisse potenti.
+* Bullet lists are easy too
+* Another one
+* Another one
+
+# A numbered list
+# Which is numbered
+# With periods and a space
+
+|_.Col 1|_.Col 2|_.Col 3|
+|a|table|row|
+|a|table|row|
+
+* <, >, =, and <> used for alignment
+
+ABC(Abbreviation definition here)
