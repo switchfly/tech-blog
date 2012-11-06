@@ -4,14 +4,14 @@ layout: default
 
 <!-- Wraps each post on the post page -->
 <article id="post">
-  <div class="three columns alpha post-info">
+  <div class="twelve columns post-body">
+    {{ content }}
+  </div>
+<div class="twelve columns post-info">
     <a class="image-link" href="{{ page.author-link }}"><img class="author" src="/tech-blog/images/{{ page.author-image }}" alt="{{ page.author }}" /></a>            
     <div class="clear"></div>            
     <a class="author-link" href="{{ page.author-link }}">{{ page.author }}</a>
     <div class="date">{{ page.date | date: "%d %B %Y" }}</div>
     <div class="category"><a href="/tech-blog/{{ post.category }}.html">{{ post.category }}</a></div>
-  </div>
-  <div class="nine columns omega post-body">
-    {{ content }}
-  </div>
+  </div>  
 </article>
