@@ -816,7 +816,16 @@ or wrap each row of columns in a <div class="row"> */
   height: 0; }
 
 .highlight {
-  background: #ffffff; }
+  background: #ffffff;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: #eee; }
+
+.highlight .lineno {
+  border-right: 1px solid #ccc;
+  color: #999;
+  padding-right: 2px; }
 
 .highlight .c {
   color: #999988;
