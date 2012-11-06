@@ -47,6 +47,4 @@ bq. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
 |a|table|row|
 |a|table|row|
 
-* <, >, =, and <> used for alignment
-
-ABC(Abbreviation definition here)
+*Abbreviations:* ABC(Abbreviation definition here)

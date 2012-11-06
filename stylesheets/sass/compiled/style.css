@@ -1116,8 +1116,19 @@ img.author {
 p, ul, ol {
   margin-bottom: 18px; }
 
+ul {
+  list-style: disc outside none;
+  margin-left: 30px; }
+
 em {
   font-style: italic; }
+
+acronym {
+  color: #DC291C;
+  cursor: help; }
+
+acronym:hover {
+  color: #3d4b58; }
 
 /* General Page Styles */
 header {
@@ -1133,6 +1144,10 @@ header {
   -o-box-shadow: 0 5px 20px #fff;
   -ms-box-shadow: 0 5px 20px #fff;
   box-shadow: 0 5px 20px #fff; }
+
+nav ul {
+  list-style: none;
+  margin-left: 0; }
 
 .header-content,
 footer {
