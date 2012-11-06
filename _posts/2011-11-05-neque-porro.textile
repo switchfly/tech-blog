@@ -15,16 +15,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus interdum auc
 
 bq. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!
 
-{% highlight linenos %}
+{% highlight html linenos %}
 <div class="date">
 	<span>blah</span>
 </div>
 {% endhighlight %}
 
-{% highlight html linenos %}
-<div class="date">
-	<span>blah</span>
-</div>
+{% highlight css linenos %}
+.foo {
+	color: red;	
+}
+
+#bar {
+	background: blue;
+}
 {% endhighlight %}
 
 Phasellus urna nunc, pulvinar scelerisque hendrerit et, tempor id leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris enim risus, pretium at venenatis ullamcorper, tincidunt sed sem. Etiam magna ipsum, facilisis sed iaculis nec, rhoncus eget nisl. Morbi nec urna tortor. Praesent vel nisl vel urna volutpat pharetra. Suspendisse potenti.
