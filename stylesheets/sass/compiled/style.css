@@ -1155,6 +1155,11 @@ table tr:hover td {
   padding-top: 1em;
   margin-top: 1em; }
 
+code {
+  font-family: monospace;
+  font-size: 12px;
+  letter-spacing: 0; }
+
 /* General Page Styles */
 header {
   width: 100%;
