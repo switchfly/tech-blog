@@ -27,12 +27,14 @@ bq. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
 .foo {
 	color: red;	
 }
+{% endhighlight %}
 
 (without lines)
 {% highlight css %}
 .foo {
 	color: red;	
 }
+{% endhighlight %}
 
 !http://lorempixel.com/350/250/(this is the alt text)!
 
