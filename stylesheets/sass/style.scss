@@ -97,9 +97,9 @@ table tr:hover td {
 }
 
 #post .post-info {
-border-top: 1px solid #ccc;
-  padding-top: 1em;
-  margin-top: 1em;
+	border-top: 1px dotted #ccc;
+  	padding-top: 1em;
+  	margin-top: 1em;
 }
 
 /* General Page Styles */
@@ -122,7 +122,7 @@ header {
 
 nav ul {
 	list-style: none;
-  margin-left: 0;
+  	margin-left: 0;
 }
 
 .header-content,
