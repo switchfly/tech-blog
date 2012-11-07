@@ -13,7 +13,7 @@ h1. {{ page.title }}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus interdum auctor. Here is a link to "Warped":http://warpedvisions.org.
 
-Now some inline markup like _italics_,  *bold*, and <code>code()</code>. 
+Now some inline markup like _italics_, *bold*, and <code>code()</code>. 
 
 bq. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!
 

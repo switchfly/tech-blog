@@ -3,8 +3,8 @@ layout default
 title Switchfly Technical Blog || Web Development Articles
 ---
 <!-- index.html - Wraps each post on main page -->
-{% for post in site.posts %}
-{% if page.category == 'web-development' %}
+<!-- {% for post in site.posts %}
+{% if page.category == 'web-development' %} -->
   <article class="post-home twelve columns">
     <div class="three columns alpha post-info">
       <a class="image-link" href="{{ post.author-link }}"><img class="author" src="/tech-blog/images/{{ post.author-image }}" alt="{{ post.author }}" /></a>
@@ -22,5 +22,5 @@ title Switchfly Technical Blog || Web Development Articles
       <p class="post-summary">{{ post.summary }}</p>
     </div>
   </article>
-{% endif %} 
-{% endfor %} 
+<!-- {% endif %} 
+{% endfor %}  -->
