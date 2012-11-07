@@ -17,22 +17,22 @@ Now some inline markup like _italics_,  *bold*, and <code>code()</code>.
 
 bq. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!
 
-{% highlight html %}
+{% highlight html linenos %}
 <div class="date">
 	<span>blah</span>
 </div>
 {% endhighlight %}
 
-(With line numbers)
 {% highlight css linenos %}
 .foo {
 	color: red;	
 }
 
-#bar {
-	background: blue;
+(without lines)
+{% highlight css %}
+.foo {
+	color: red;	
 }
-{% endhighlight %}
 
 !http://lorempixel.com/350/250/(this is the alt text)!
 
