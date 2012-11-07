@@ -125,12 +125,6 @@ header {
 	box-shadow: 0 5px 20px #fff;
 }
 
-footer {
-	margin-top: 1em;
-	padding-top: 1em;
-	border-top: 1px solid #ccc;
-}
-
 nav ul {
 	list-style: none;
   	margin-left: 0;
@@ -142,6 +136,12 @@ footer {
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
+}
+
+footer {
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px solid #ccc;
 }
 
 .container {
