@@ -1192,7 +1192,9 @@ footer {
 footer {
   margin-top: 1em;
   padding-top: 1em;
-  border-top: 1px solid #999999; }
+  border-top: 1px solid #999999;
+  font-size: .8em;
+  color: #999999; }
 
 .container {
   padding-top: 310px; }
@@ -1228,3 +1230,6 @@ homepage
     margin-top: 15px;
     font-size: 12px;
     color: #999999; }
+
+.post-home:last-of-type {
+  border-bottom: 0; }

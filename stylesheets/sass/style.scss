@@ -152,6 +152,8 @@ footer {
 	margin-top: 1em;
 	padding-top: 1em;
 	border-top: 1px solid $line-color;
+	font-size: .8em;
+	color: $line-color;
 }
 
 .container {
@@ -201,4 +203,8 @@ homepage
 		font-size: 12px;
 		color: $line-color;
 	}
+}
+
+.post-home:last-of-type {
+	border-bottom: 0;
 }
