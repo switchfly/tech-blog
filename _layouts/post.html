@@ -3,19 +3,19 @@ layout: default
 ---
 
 <!-- Wraps each post on the post page -->
-<article id="post">post{{ post.title }} nothing{{ title }} this{{ this.title }}
+<article id="post">
   <div class="twelve columns post-info">
     <div class="alpha two columns">
-      <img class="author-image" src="tech-blog/images/{{ author-image }}" alt="{{ author }}" />
+      <img class="author-image" src="tech-blog/images/{{ page.author-image }}" alt="{{ page.author }}" />
     </div>
     <div class="omega ten columns">
       <div class="date">
-        <p>{{ date | date: "%B %d" }}</p>
-        <p class="year">{{ date | date: "%Y" }}</p>
+        <p>{{page.date | date: "%B %d" }}</p>
+        <p class="year">{{ page.date | date: "%Y" }}</p>
       </div>
       <!-- <div class="tags"><span class="label">Tags:</span> {{ post.tags }}</div>-->
       <div class="author">
-        <!-- <a class="author-link" href="{{ post.author-link }}"> -->{{ author }}<!-- </a> -->      
+        <!-- <a class="author-link" href="{{ post.author-link }}"> -->{{ page.author }}<!-- </a> -->      
       </div>
     </div>
   </div>
