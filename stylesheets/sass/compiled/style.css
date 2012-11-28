@@ -1104,11 +1104,8 @@ a.image-link {
   display: block;
   margin-bottom: 2px; }
   a.image-link img {
-    opacity: 0.9;
     width: 60px;
     height: auto; }
-  a.image-link:hover img {
-    opacity: 1; }
 
 img.author {
   border: 2px solid #3d4b58; }
@@ -1231,3 +1228,15 @@ homepage
     color: #c9c9c9; }
   .post-home .post-summary {
     margin-top: 16px; }
+  .post-home .date {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal; }
+  .post-home .date p {
+    margin-bottom: -5px; }
+  .post-home .year {
+    font-size: 12px; }
+  .post-home .author {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999; }
