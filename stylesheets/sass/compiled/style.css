@@ -1179,6 +1179,19 @@ pre, code {
   top: -21px;
   left: 0; }
 
+.header-content {
+  background: transparent url("images/headerBg.png") 50% 0 no-repeat;
+  height: 294px; }
+
+.header-content h1 {
+  margin-bottom: 0; }
+
+.header-content h1 a {
+  color: #c8ced3;
+  position: absolute;
+  bottom: 120px;
+  left: 230px; }
+
 nav ul {
   list-style: none;
   margin-left: 0; }
