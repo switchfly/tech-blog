@@ -1233,3 +1233,12 @@ homepage
 
 .post-home:last-of-type {
   border-bottom: 0; }
+
+#post-list .post-detail {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 16px; }
+
+#post-list .post-detail h1,
+#post-list .post-detail p:first-of-type {
+  display: none; }
