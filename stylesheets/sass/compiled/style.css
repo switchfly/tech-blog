@@ -1092,13 +1092,6 @@ img {
   margin: 1em 0;
   border: 5px solid #ccc; }
 
-.author-image {
-  display: block;
-  margin: 0 0;
-  width: 60px;
-  height: auto;
-  border: 2px solid #999999; }
-
 p, ul, ol {
   margin-bottom: 18px; }
 
@@ -1233,6 +1226,13 @@ homepage
   font-size: 12px;
   color: #999999; }
 
+.author-image {
+  display: block;
+  margin: 0 0;
+  width: 60px;
+  height: auto;
+  border: 2px solid #999999; }
+
 #post-list .post-body {
   margin-top: 12px;
   font-size: 12px;
@@ -1252,3 +1252,6 @@ homepage
   argin-left: 0;
   margin-top: -5px;
   margin-bottom: 10px; }
+
+.post-info .author-image {
+  margin-left: 20px; }
