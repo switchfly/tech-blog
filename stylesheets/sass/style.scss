@@ -34,7 +34,7 @@ img {
 
 .author-image {
 	display: block;
-	margin-bottom: 2px;
+	margin: 0 0;
 	width: 60px;
 	height: auto;
 	border: 2px solid $line-color;
@@ -168,16 +168,15 @@ homepage
 
 /*blog home*/
 .post-home {
-	border-top: 1px solid $line-color;
+	border-bottom: 1px solid $line-color;
 	overflow: hidden;
-	padding-bottom: 30px;	
+	padding-bottom: 20px;	
 	h1 {
 		font-size: $font-size * 2;
 		line-height: ($font-size * 2) + 6;
 		font-weight: $medium;
 		letter-spacing: 1px;
 		margin-top: 12px;
-		color: #c9c9c9;
 	}
 	.post-summary {
 		margin-top: 16px;

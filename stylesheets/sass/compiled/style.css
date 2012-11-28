@@ -1094,7 +1094,7 @@ img {
 
 .author-image {
   display: block;
-  margin-bottom: 2px;
+  margin: 0 0;
   width: 60px;
   height: auto;
   border: 2px solid #3d4b58; }
@@ -1205,16 +1205,15 @@ homepage
 -----------*/
 /*blog home*/
 .post-home {
-  border-top: 1px solid #3d4b58;
+  border-bottom: 1px solid #3d4b58;
   overflow: hidden;
-  padding-bottom: 30px; }
+  padding-bottom: 20px; }
   .post-home h1 {
     font-size: 30px;
     line-height: 36px;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-top: 12px;
-    color: #c9c9c9; }
+    margin-top: 12px; }
   .post-home .post-summary {
     margin-top: 16px; }
   .post-home .date {
