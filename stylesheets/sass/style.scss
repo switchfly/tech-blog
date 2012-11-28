@@ -115,7 +115,7 @@ pre, code {
   position: fixed;
   top: 0;
   left: 0;
-  background: #fff;
+  background: transparent;
   z-index: 9; }
 
 .site-header .sticky-top {
@@ -164,7 +164,7 @@ footer {
 }
 
 .container {
-	padding-top: 110px;
+	padding-top: 310px;
 }
 
 #sidebar nav {
