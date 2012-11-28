@@ -111,19 +111,24 @@ pre, code {
 /* General Page Styles */
 
 .site-header {
-  width: 100%;
+	width: 100%; 
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 9;
 }
 
 .site-header .sticky-top {
-background: #333f48;
-  height: 22px;
+	background: #333f48;
+	height: 22px;
 }
 
 .site-header #switchfly {
-color: #fff;
-  position: absolute;
-  top: -21px;
-  left: 0;
+	color: #fff;
+	position: absolute;
+	top: -21px;
+	left: 0;
 }
 
 nav ul {
