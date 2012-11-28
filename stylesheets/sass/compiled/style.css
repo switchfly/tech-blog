@@ -1136,11 +1136,6 @@ table tr:hover td {
   background: #006ba6;
   color: #fff; }
 
-#post .post-info {
-  border-top: 1px dotted #999999;
-  padding-top: 1em;
-  margin-top: 1em; }
-
 pre, code {
   font-family: monospace;
   font-size: 12px;
@@ -1218,27 +1213,37 @@ homepage
     margin-top: 12px; }
   .post-home .post-summary {
     margin-top: 16px; }
-  .post-home .date {
-    color: #999999;
-    font-size: 16px;
-    font-weight: normal; }
-  .post-home .date p {
-    margin-bottom: -5px; }
-  .post-home .year {
-    font-size: 12px; }
-  .post-home .author {
-    margin-top: 15px;
-    font-size: 12px;
-    color: #999999; }
 
 .post-home:last-of-type {
   border-bottom: 0; }
 
-#post-list .post-detail {
+.date {
+  color: #999999;
+  font-size: 16px;
+  font-weight: normal; }
+
+.date p {
+  margin-bottom: -5px; }
+
+.year {
+  font-size: 12px; }
+
+.author {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #999999; }
+
+#post-list .post-body {
   margin-top: 12px;
   font-size: 12px;
   line-height: 16px; }
 
-#post-list .post-detail h1,
-#post-list .post-detail p:first-of-type {
+#post-list .post-body h1,
+#post-list .post-body p:first-of-type {
   display: none; }
+
+#post .post-info {
+  border: 1px solid #999999;
+  border-width: 1px 0;
+  padding-top: 1em;
+  margin-top: 1em; }
