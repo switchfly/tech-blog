@@ -15,8 +15,11 @@ title: Switchfly Technical Blog
       <a class="image-link" href="{{ post.author-link }}"><img class="author" src="/tech-blog/images/{{ post.author-image }}" alt="{{ post.author }}" /></a>
       <div class="clear"></div>
       <a class="author-link" href="{{ post.author-link }}">{{ post.author }}</a>
-      <div class="date">{{ post.date | date: "%d %B %Y" }}</div>
-      <div class="category"><a href="/tech-blog/{{ post.category }}.html">{{ post.category }}</a></div>
+      <div class="date">
+        <p>{{ post.date | date: "%d %B }}</p>
+        <p class="year">{{ post.date | date: %Y" }}</p>
+      </div>
+      <!-- <div class="category"><a href="/tech-blog/{{ post.category }}.html">{{ post.category }}</a></div> -->
     </div>
     <div class="twelve columns post-summary">
       <p class="post-summary">{{ post.summary }}</p>
