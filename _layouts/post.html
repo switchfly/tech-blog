@@ -8,11 +8,9 @@ layout: default
     {{ content }}
   </div>
   <div class="twelve columns post-info">
-    <h4>About the author</h4>
-    <a class="image-link" href="{{ page.author-link }}"><img class="author" src="/tech-blog/images/{{ page.author-image }}" alt="{{ page.author }}" /></a>            
-    <div class="clear"></div>            
-    <a class="author-link" href="{{ page.author-link }}">{{ page.author }}</a>
+    <img class="author" src="/tech-blog/images/{{ page.author-image }}" alt="{{ page.author }}" />
+    {{ page.author }}
     <div class="date">{{ page.date | date: "%d %B %Y" }}</div>
-    <div class="category"><a href="/tech-blog/{{ post.category }}.html">{{ post.category }}</a></div>
+    <!-- <div class="category"><a href="/tech-blog/{{ post.category }}.html">{{ post.category }}</a></div> -->
   </div>  
 </article>

@@ -28,8 +28,10 @@ title: Switchfly Technical Blog
       </div>
     </aside>
     <div class="twelve columns post-summary">
-      <p class="post-summary">{{ post.summary }}</p>
-      <p class="post-detail">{{ post.content }}</p>
+      {{ post.summary }}
+    </div>
+    <div class="twelve columns post-detail">
+      {{ post.content }}
     </div>
   </article>
 {% endfor %}
