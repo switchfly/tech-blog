@@ -1100,14 +1100,11 @@ img {
   margin: 1em 0;
   border: 5px solid #ccc; }
 
-a.image-link {
+author-image {
   display: block;
-  margin-bottom: 2px; }
-  a.image-link img {
-    width: 60px;
-    height: auto; }
-
-img.author {
+  margin-bottom: 2px;
+  width: 60px;
+  height: auto;
   border: 2px solid #3d4b58; }
 
 p, ul, ol {

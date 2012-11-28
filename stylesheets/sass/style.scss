@@ -32,16 +32,11 @@ img {
 	border: 5px solid #ccc;		
 }
 
-a.image-link {
+author-image {
 	display: block;
 	margin-bottom: 2px;
-	img {
-		width: 60px;
-		height: auto;
-	}
-}
-
-img.author {
+	width: 60px;
+	height: auto;
 	border: 2px solid $line-color;
 }
 
