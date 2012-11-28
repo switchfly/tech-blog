@@ -1097,7 +1097,7 @@ img {
   margin: 0 0;
   width: 60px;
   height: auto;
-  border: 2px solid #3d4b58; }
+  border: 2px solid #999999; }
 
 p, ul, ol {
   margin-bottom: 18px; }
@@ -1122,12 +1122,12 @@ table {
 table th,
 table td {
   padding: 2px 10px;
-  border: 1px solid #ccc; }
+  border: 1px solid #999999; }
 
 table th {
   background: #333f48;
   color: #fff;
-  font-weight: bold; }
+  font-weight: 600; }
 
 table tr:nth-of-type(odd) td {
   background: #eee; }
@@ -1137,7 +1137,7 @@ table tr:hover td {
   color: #fff; }
 
 #post .post-info {
-  border-top: 1px dotted #ccc;
+  border-top: 1px dotted #999999;
   padding-top: 1em;
   margin-top: 1em; }
 
@@ -1192,7 +1192,7 @@ footer {
 footer {
   margin-top: 1em;
   padding-top: 1em;
-  border-top: 1px solid #ccc; }
+  border-top: 1px solid #999999; }
 
 .container {
   padding-top: 310px; }
@@ -1205,7 +1205,7 @@ homepage
 -----------*/
 /*blog home*/
 .post-home {
-  border-bottom: 1px solid #3d4b58;
+  border-bottom: 1px solid #999999;
   overflow: hidden;
   padding-bottom: 20px; }
   .post-home h1 {
@@ -1217,7 +1217,7 @@ homepage
   .post-home .post-summary {
     margin-top: 16px; }
   .post-home .date {
-    color: #999;
+    color: #999999;
     font-size: 16px;
     font-weight: normal; }
   .post-home .date p {
@@ -1227,4 +1227,4 @@ homepage
   .post-home .author {
     margin-top: 15px;
     font-size: 12px;
-    color: #999; }
+    color: #999999; }
