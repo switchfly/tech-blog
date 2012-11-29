@@ -5,7 +5,8 @@ author-image: scottgalloway.jpg
 title: SAMPLE ARTICLE
 summary: This is a paragraph, which is text surrounded by whitespace.
 ---
-h1. Header 1
+
+h1. {{ page.title }}
 
 h2. Header 2
 
@@ -26,7 +27,7 @@ that underscores in words are ignored. Textile also has a few handy character he
 trademark(TM), reserved(R), copyright(C), ellipses ..., superscripts^2, subscripts~2, 
 and so on.
 
-!/images/photo.jpeg(this is the alt text)!
+!http://lorempixel.com/350/250/(this is the alt text)!
 
 bq. Blockquotes are like quoted text in email replies
 
@@ -42,6 +43,7 @@ A mixed list:
 
 * Bullet one
 * Bullet two
+
 ## Step 1
 ## Step 2
 ## Step 3
