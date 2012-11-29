@@ -106,7 +106,7 @@ pre, code {
 			left: 0; }
 
 			.header-content {
-				background: transparent url('images/headerBg.png') 50% 0 no-repeat;
+				background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
 				height: 294px;
 			}
 
@@ -176,7 +176,7 @@ homepage
 }
 
 .date {
-	color: $line-color;
+	color: $secondary-color;
 	font-size: 16px;
 	font-weight: normal;
 }
@@ -192,7 +192,7 @@ homepage
 .author {
 	margin-top: 15px;
 	font-size: 12px;
-	color: $line-color;
+	color: $secondary-color;
 }
 
 
