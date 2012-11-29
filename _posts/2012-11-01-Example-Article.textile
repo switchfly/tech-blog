@@ -1,8 +1,7 @@
 ---
 layout: post
 author: SAMPLE AUTHOR
-author-image: 
-author-link: 
+author-image: scottgalloway.jpg
 title: SAMPLE ARTICLE
 summary: This is a paragraph, which is text surrounded by whitespace.
 ---

@@ -1182,7 +1182,14 @@ footer {
   padding-top: 1em;
   border-top: 1px solid #cccccc;
   font-size: .8em;
-  color: #999999; }
+  color: #fff;
+  background: #333f48;
+  width: 100%;
+  position: absolute; }
+
+footer .sixteen {
+  width: 960px;
+  margin: 0 auto; }
 
 .container {
   padding-top: 310px; }
