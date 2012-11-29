@@ -5,7 +5,6 @@ author-image:
 author-link: 
 title: SAMPLE ARTICLE
 summary: This is a paragraph, which is text surrounded by whitespace.
-published: false
 ---
 h1. Header 1
 
