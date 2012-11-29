@@ -88,91 +88,89 @@ pre, code {
 /* General Page Styles */
 
 .site-header {
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background: transparent;
+z-index: 9; }
+
+.site-header .sticky-top {
+background: #333f48;
+height: 22px; }
+
+.site-header #switchfly {
+color: #fff;
+position: absolute;
+top: -21px;
+left: 0;}
+
+.header-content {
+	background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
+	height: 294px;
+}
+
+.header-content h1 {
+	margin-bottom: 0;
+}
+
+.header-content h1 a {
+	color: #c8ced3;
+	position: absolute;
+	bottom: 120px;
+	left: 230px;
+}
+
+.header-content h1 a:hover {
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+.header-content img {
+border: 0;
+  margin: 0;
+  opacity: .8;
+}
+
+.header-content img:hover {
+opacity: 1;
+}
+
+.header-content,
+footer {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
+footer {
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px solid #cccccc;
+	font-size: .8em;
+	color: #fff;
+	background: #333f48;
 	width: 100%;
+	position: absolute;
+}
+
+footer .sixteen {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.container {
+	padding-top: 310px;
+}
+
+#sidebar nav {
 	position: fixed;
-	top: 0;
-	left: 0;
-	background: transparent;
-	z-index: 9; }
-
-	.site-header .sticky-top {
-		background: #333f48;
-		height: 22px; }
-
-		.site-header #switchfly {
-			color: #fff;
-			position: absolute;
-			top: -21px;
-			left: 0; 
-
-			.header-content {
-				background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
-				height: 294px;
-			}
-
-			.header-content h1 {
-				margin-bottom: 0;
-			}
-
-			.header-content h1 a {
-				color: #c8ced3;
-				position: absolute;
-				bottom: 120px;
-				left: 230px;
-			}
-
-			.header-content h1 a:hover {
-				color: #fff;
-			}
-
-			nav ul {
-				list-style: none;
-				margin-left: 0;
-			}
-
-			.header-content img {
-			border: 0;
-			  margin: 0;
-			  opacity: .8;
-			}
-
-			.header-content img:hover {
-			opacity: 1;
-			}
-
-		}
-
-			.header-content,
-			footer {
-				width: 960px;
-				margin: 0 auto;
-				padding: 0;
-				position: relative;
-			}
-
-			footer {
-				margin-top: 1em;
-				padding-top: 1em;
-				border-top: 1px solid #cccccc;
-				font-size: .8em;
-				color: #fff;
-				background: #333f48;
-				width: 100%;
-				position: absolute;
-			}
-
-			footer .sixteen {
-				width: 960px;
-				margin: 0 auto;
-			}
-
-			.container {
-				padding-top: 310px;
-			}
-
-			#sidebar nav {
-				position: fixed;
-			}
+}
 
 /* ---------
 homepage
