@@ -103,7 +103,7 @@ pre, code {
 			color: #fff;
 			position: absolute;
 			top: -21px;
-			left: 0; }
+			left: 0; 
 
 			.header-content {
 				background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
@@ -129,6 +129,18 @@ pre, code {
 				list-style: none;
 				margin-left: 0;
 			}
+
+			.header-content img {
+			border: 0;
+			  margin: 0;
+			  opacity: .8;
+			}
+
+			.header-content img:hover {
+			opacity: 1;
+			}
+
+		}
 
 			.header-content,
 			footer {
