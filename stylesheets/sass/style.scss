@@ -12,7 +12,7 @@ body {
 	font-size: $font-size;
 	line-height: $line-height;
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-  	color: $text-color; 
+	color: $text-color; 
 	letter-spacing: 0.03em;	
 }
 
@@ -38,7 +38,7 @@ p, ul, ol {
 
 ul {
 	list-style: disc outside none;
-  	margin-left: 30px;
+	margin-left: 30px;
 }
 
 em {
@@ -47,7 +47,7 @@ em {
 
 acronym {
 	color: #DC291C;
-  cursor: help;
+	cursor: help;
 }
 
 acronym:hover {
@@ -61,13 +61,13 @@ table {
 table th,
 table td {
 	padding: 2px 10px;
-  	border: 1px solid $line-color;
+	border: 1px solid $line-color;
 }
 
 table th {
 	background: #333f48;
-  	color: #fff;
-  	font-weight: $bold;
+	color: #fff;
+	font-weight: $bold;
 }
 
 table tr:nth-of-type(odd) td {
@@ -76,79 +76,79 @@ table tr:nth-of-type(odd) td {
 
 table tr:hover td {
 	background: #006ba6;
-  	color: #fff;
+	color: #fff;
 }
 
 pre, code {
 	font-family: monospace;
-  	font-size: 12px;
-  	letter-spacing: 0;
+	font-size: 12px;
+	letter-spacing: 0;
 }
 
 /* General Page Styles */
 
 .site-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: transparent;
-  z-index: 9; }
-
-.site-header .sticky-top {
-  background: #333f48;
-  height: 22px; }
-
-.site-header #switchfly {
-  color: #fff;
-  position: absolute;
-  top: -21px;
-  left: 0; }
-
-.header-content {
- background: transparent url('images/headerBg.png') 50% 0 no-repeat;
-  height: 294px;
-}
-
-.header-content h1 {
-margin-bottom: 0;
-}
-
-.header-content h1 a {
-color: #c8ced3;
-  position: absolute;
-  bottom: 120px;
-  left: 230px;
-}
-
-nav ul {
-	list-style: none;
-  	margin-left: 0;
-}
-
-.header-content,
-footer {
-	width: 960px;
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
-}
-
-footer {
-	margin-top: 1em;
-	padding-top: 1em;
-	border-top: 1px solid $line-color;
-	font-size: .8em;
-	color: $line-color;
-}
-
-.container {
-	padding-top: 310px;
-}
-
-#sidebar nav {
+	width: 100%;
 	position: fixed;
-}
+	top: 0;
+	left: 0;
+	background: transparent;
+	z-index: 9; }
+
+	.site-header .sticky-top {
+		background: #333f48;
+		height: 22px; }
+
+		.site-header #switchfly {
+			color: #fff;
+			position: absolute;
+			top: -21px;
+			left: 0; }
+
+			.header-content {
+				background: transparent url('images/headerBg.png') 50% 0 no-repeat;
+				height: 294px;
+			}
+
+			.header-content h1 {
+				margin-bottom: 0;
+			}
+
+			.header-content h1 a {
+				color: #c8ced3;
+				position: absolute;
+				bottom: 120px;
+				left: 230px;
+			}
+
+			nav ul {
+				list-style: none;
+				margin-left: 0;
+			}
+
+			.header-content,
+			footer {
+				width: 960px;
+				margin: 0 auto;
+				padding: 0;
+				position: relative;
+			}
+
+			footer {
+				margin-top: 1em;
+				padding-top: 1em;
+				border-top: 1px solid $line-color;
+				font-size: .8em;
+				color: $line-color;
+			}
+
+			.container {
+				padding-top: 310px;
+			}
+
+			#sidebar nav {
+				position: fixed;
+			}
 
 /* ---------
 homepage
@@ -218,8 +218,8 @@ homepage
 #post .post-info {
 	border: 1px solid $line-color;
 	border-width: 1px 0;
-  	padding: 1em 0;
-  	margin: 1em 0;
+	padding: 1em 0;
+	margin: 1em 0;
 }
 
 .post-info .omega {
@@ -230,4 +230,44 @@ homepage
 
 .post-info .author-image {
 	margin-left: 20px;
+}
+
+.socials {
+	list-style: none;
+	margin-top: 20px;
+}
+
+.socials li {
+	margin-bottom: 20px;
+}
+
+.socials li a {
+	display: block;
+	height: 32px;
+	width: 32px;
+	overflow: hidden;
+	background: transparent url('/tech-blog/images/socialsSprite.png') 0 0 no-repeat;
+	-moz-opacity: .5;
+	-webkit-opacity: .5;
+	-o-opacity: .5;
+	opacity: .5;
+}
+
+.socials li a:hover {
+	-moz-opacity: 1;
+	-webkit-opacity: 1;
+	-o-opacity: 1;
+	opacity: 1;
+}
+
+.socials .email a {
+	background-position: 0 -32px;
+}
+
+.socials .linkedin a {
+	background-position: 0 -64px;
+}
+
+.socials .rss a {
+	background-position: 0 -96px;
 }

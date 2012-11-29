@@ -1255,3 +1255,36 @@ homepage
 
 .post-info .author-image {
   margin-left: 20px; }
+
+.socials {
+  list-style: none;
+  margin-top: 20px; }
+
+.socials li {
+  margin-bottom: 20px; }
+
+.socials li a {
+  display: block;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  background: transparent url("/tech-blog/images/socialsSprite.png") 0 0 no-repeat;
+  -moz-opacity: .5;
+  -webkit-opacity: .5;
+  -o-opacity: .5;
+  opacity: .5; }
+
+.socials li a:hover {
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1; }
+
+.socials .email a {
+  background-position: 0 -32px; }
+
+.socials .linkedin a {
+  background-position: 0 -64px; }
+
+.socials .rss a {
+  background-position: 0 -96px; }
