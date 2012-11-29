@@ -1081,6 +1081,21 @@ body {
   letter-spacing: 0.03em; }
 
 /*general*/
+/* Following is for sticky footer */
+html, body, #container {
+  height: 100%; }
+
+body > #container {
+  height: auto;
+  min-height: 100%; }
+
+footer {
+  position: relative;
+  margin-top: -100px;
+  height: 100px;
+  clear: both; }
+
+/* End sticky footer */
 a, a:active, a:visited {
   color: #dc291c;
   text-decoration: none; }
@@ -1195,8 +1210,7 @@ footer {
   font-size: .8em;
   color: #fff;
   background: #333f48;
-  width: 100%;
-  position: absolute; }
+  width: 100%; }
 
 footer .sixteen {
   width: 960px;

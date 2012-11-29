@@ -18,6 +18,26 @@ body {
 
 /*general*/ 
 
+/* Following is for sticky footer */
+
+html, body, #container {
+height: 100%;
+}
+
+body > #container {
+height: auto;
+  min-height: 100%;
+}
+
+footer {
+position: relative;
+  margin-top: -100px;
+  height: 100px;
+  clear: both;
+}
+
+/* End sticky footer */
+
 a, a:active, a:visited {
 	color: $link-color;	
 	text-decoration: none;
@@ -149,14 +169,13 @@ footer {
 }
 
 footer {
-	margin-top: 1em;
-	padding-top: 1em;
-	border-top: 1px solid #cccccc;
-	font-size: .8em;
-	color: #fff;
-	background: #333f48;
-	width: 100%;
-	position: absolute;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #cccccc;
+  font-size: .8em;
+  color: #fff;
+  background: #333f48;
+  width: 100%;
 }
 
 footer .sixteen {
