@@ -1166,6 +1166,9 @@ pre, code {
   bottom: 120px;
   left: 230px; }
 
+.header-content h1 a:hover {
+  color: #fff; }
+
 nav ul {
   list-style: none;
   margin-left: 0; }
