@@ -251,12 +251,12 @@ homepage
 	line-height: 16px;
 }
 
-.home-page .post-body h1,
-.home-page .post-body p:first-of-type {
+#post-list .post-body h1,
+#post-list .post-body p:first-of-type {
 	display: none;
 }
 
-#post .post-info {
+#post-page .post-info {
 	border: 1px solid $line-color;
 	border-width: 1px 0;
 	padding: 1em 0;
