@@ -1273,7 +1273,7 @@ homepage
 #post-list .post-body {
   display: none; }
 
-#post-list #post .post-body {
+#post-list #post-page .post-body {
   display: block; }
 
 #post-page .post-info {
