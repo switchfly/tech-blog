@@ -273,6 +273,11 @@ homepage
 	margin-left: 20px;
 }
 
+.post-body img {
+	width: 100%;
+	height: auto;
+}
+
 .socials {
 	list-style: none;
 	margin-top: 20px;
@@ -311,4 +316,4 @@ homepage
 	.rss a {
 		background-position: 0 -96px;
 	}
-}	
+} /* End .socials */	
