@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Kevin Baughman
+author-image: kevin_baughman.jpg
 title: Telecommuting Series – Chapter 1: Introduction
 summary: I have worked for Switchfly for over 8 years and for the first 3 years I worked in the corporate office.  However, I moved to another state (New Mexico and then later Texas) and so for the last 5 years I’ve have been telecommuting from my home office.  Throughout that time Switchfly has been very supportive and willing to learn with me to make telecommuting as effective as possible.  In fact, at this time there are at least 7 full time employees that live outside of California who also telecommute. In this blog I intend to share my experiences and cover the following topics.  If you have any other suggestions please let us know.
 
@@ -9,6 +10,7 @@ summary: I have worked for Switchfly for over 8 years and for the first 3 years 
 h1. Telecommuting Series – Chapter 1: Introduction
 
 This will be a four part series:
+
 ## Telecommuting Series – Chapter 1: Introduction
 ## Telecommuting Series – Chapter 2: Technology
 ## Telecommuting Series – Chapter 3: Home Office
