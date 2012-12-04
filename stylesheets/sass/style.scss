@@ -255,6 +255,10 @@ homepage
 	display: none;
 }
 
+#post-list #post .post-body {
+	display: block;
+}
+
 #post-page .post-info {
 	border: 1px solid $line-color;
 	border-width: 1px 0;
