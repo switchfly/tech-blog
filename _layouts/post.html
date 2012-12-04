@@ -4,23 +4,8 @@ layout: default
 
 <!-- Wraps each post on the post page -->
 <article id="post-page">
-  <div class="twelve columns alpha post-title">
+  <div class="thirteen columns post-title">
       <h1>{{ page.title }}</h1>
-  </div>
-  <div class="twelve columns post-info">
-    <div class="alpha two columns">
-      <img class="author-image" src="/tech-blog/images/{{ page.author-image }}" alt="{{ page.author }}" />
-    </div>
-    <div class="omega ten columns">
-      <div class="date">
-        <p>{{page.date | date: "%B %d" }}</p>
-        <p class="year">{{ page.date | date: "%Y" }}</p>
-      </div>
-      <!-- <div class="tags"><span class="label">Tags:</span> {{ post.tags }}</div>-->
-      <div class="author">
-        <!-- <a class="author-link" href="{{ post.author-link }}"> -->{{ page.author }}<!-- </a> -->      
-      </div>
-    </div>
   </div>
   <div class="two columns alpha post-social">
     <ul class="socials">
@@ -31,8 +16,23 @@ layout: default
       <li class="linkedin"><a href="" title="Post this article to LinkedIn"></a></li>
       <li class="rss"><a href="" title="Subscribe to the Switchfly Technical Blog"></a></li>
     </ul>
+  </div>  
+  <div class="eleven columns omega post-info">
+    <div class="alpha two columns">
+      <img class="author-image" src="/tech-blog/images/{{ page.author-image }}" alt="{{ page.author }}" />
+    </div>
+    <div class="omega nine columns">
+      <div class="date">
+        <p>{{page.date | date: "%B %d" }}</p>
+        <p class="year">{{ page.date | date: "%Y" }}</p>
+      </div>
+      <!-- <div class="tags"><span class="label">Tags:</span> {{ post.tags }}</div>-->
+      <div class="author">
+        <!-- <a class="author-link" href="{{ post.author-link }}"> -->{{ page.author }}<!-- </a> -->      
+      </div>
+    </div>
   </div>
-  <div class="ten columns omega post-body">
+  <div class="eleven columns post-body">
     {{ content }}
   </div>
 </article>
