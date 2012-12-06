@@ -132,6 +132,7 @@ left: 0;}
 
 .header-content h1 {
 	margin-bottom: 0;
+	font-size: 56px;
 }
 
 .header-content h1 a {
@@ -218,7 +219,7 @@ homepage
 
 .date {
 	color: $secondary-color;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: normal;
 }
 
@@ -243,6 +244,10 @@ homepage
 	width: 60px;
 	height: auto;
 	border: 2px solid $line-color;
+}
+
+#post-list h1 {
+	font-size: 36px;
 }
 
 #post-list .post-body {
@@ -274,6 +279,10 @@ homepage
 
 .post-info .author-image {
 	margin-left: 20px;
+}
+
+#post-list .author-image {
+	margin-left: 0;
 }
 
 .post-body img {

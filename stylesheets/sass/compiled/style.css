@@ -1173,7 +1173,8 @@ pre, code {
   height: 294px; }
 
 .header-content h1 {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 56px; }
 
 .header-content h1 a {
   color: #c8ced3;
@@ -1244,7 +1245,7 @@ homepage
 
 .date {
   color: #999999;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal; }
 
 .date p {
@@ -1264,6 +1265,9 @@ homepage
   width: 60px;
   height: auto;
   border: 2px solid #cccccc; }
+
+#post-list h1 {
+  font-size: 36px; }
 
 #post-list .post-body {
   margin-top: 12px;
@@ -1289,6 +1293,9 @@ homepage
 
 .post-info .author-image {
   margin-left: 20px; }
+
+#post-list .author-image {
+  margin-left: 0; }
 
 .post-body img {
   width: 100%;
