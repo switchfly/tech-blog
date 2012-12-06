@@ -110,9 +110,13 @@ pre, code {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #333f48;
+	background: #333f48 url('/tech-blog/images/headerBg.png') left bottom repeat-x;
+	height: 120px;
 	z-index: 9; 
-	box-shadow: 0 0 20px #fff;
+	-moz-box-shadow: 0 0 30px #333;
+	-webkit-box-shadow: 0 0 30px #333;
+	-o-box-shadow: 0 0 30px #333;
+	box-shadow: 0 0 30px rgba(0,0,0,.5);
 }
 
 .site-header .sticky-top {
@@ -127,13 +131,16 @@ pre, code {
 	left: 0;
 }
 
+.header-content,
+footer {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+
 .header-content {
-	/*background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
-	height: 294px;*/
-	margin-bottom: 1em;
-  	padding-bottom: 1em;
-  	color: #fff;
-  	width: 100%;
+	padding-top: 18px;
 }
 
 .header-content h1 a {
@@ -159,14 +166,6 @@ nav ul {
 	opacity: 1;
 }
 
-.header-content,
-footer {
-	width: 940px;
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
-}
-
 footer {
 	margin-top: 1em;
 	padding-top: 1em;
@@ -182,7 +181,7 @@ footer .sixteen {
 }
 
 .container {
-	padding-top: 120px;
+	padding-top: 140px;
 }
 
 #sidebar nav {
