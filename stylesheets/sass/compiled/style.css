@@ -1155,7 +1155,7 @@ pre, code {
   position: fixed;
   top: 0;
   left: 0;
-  background: transparent;
+  background: #333f48;
   z-index: 9; }
 
 .site-header .sticky-top {
@@ -1174,9 +1174,7 @@ pre, code {
   background: #dc291c;
   margin-bottom: 1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid #cccccc;
   color: #fff;
-  background: #333f48;
   width: 100%; }
 
 .header-content h1 a {
