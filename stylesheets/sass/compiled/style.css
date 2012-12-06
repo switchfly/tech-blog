@@ -398,13 +398,20 @@ legend span {
 /* #Media Queries
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  background: lightblue; }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  nav {
-    width: 124px; } }
+  background: pink; }
 /* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  background: lightgreen; }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  background: red; }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  background: green; }
 /* #Font-Face
 ================================================== */
 /* 	This is the proper syntax for an @font-face file
@@ -1080,7 +1087,7 @@ body {
   color: #333333;
   letter-spacing: 0.03em; }
 
-/*general*/
+/* GENERAL */
 /* Following is for sticky footer */
 html, body, #container {
   height: 100%; }
