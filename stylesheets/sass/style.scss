@@ -156,13 +156,13 @@ nav ul {
 }
 
 .header-content img {
-border: 0;
-  margin: 0;
-  opacity: .8;
+	border: 0;
+	margin: 0;
+	opacity: .8;
 }
 
 .header-content img:hover {
-opacity: 1;
+	opacity: 1;
 }
 
 .header-content,
@@ -174,13 +174,13 @@ footer {
 }
 
 footer {
-  margin-top: 1em;
-  padding-top: 1em;
-  border-top: 1px solid $line-color;
-  font-size: .8em;
-  color: #fff;
-  background: #333f48;
-  width: 100%;
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px solid $line-color;
+	font-size: .8em;
+	color: #fff;
+	background: #333f48;
+	width: 100%;
 }
 
 footer .sixteen {
@@ -294,6 +294,7 @@ homepage
 	height: auto;
 }
 
+/* Nested Socials Styles */
 .socials {
 	list-style: none;
 	margin-top: 20px;
