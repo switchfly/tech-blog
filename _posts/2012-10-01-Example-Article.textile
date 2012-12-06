@@ -2,7 +2,7 @@
 layout: post
 author: SAMPLE AUTHOR
 author-image: scottgalloway.jpg
-title: SAMPLE ARTICLE
+title: Strategies for the Zombie Uprising
 summary: This is a paragraph, which is text surrounded by whitespace.
 ---
 

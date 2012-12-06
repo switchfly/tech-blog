@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample post
+title: If you Widget they will Come
 author: Scott Galloway
 author-image: scottgalloway.jpg
 summary: Should show a bunch of textile markup examples
