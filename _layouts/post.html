@@ -7,17 +7,7 @@ layout: default
   <div class="sixteen columns post-title">
       <h1>{{ page.title }}</h1>
   </div>
-  <div class="two columns alpha post-social">
-    <ul class="socials">
-      <li class="twitter">
-        <a href="" title="Tweet this article"></a>
-      </li>
-      <li class="email"><a href="" title="Email this article"></a></li>
-      <li class="linkedin"><a href="" title="Post this article to LinkedIn"></a></li>
-      <li class="rss"><a href="" title="Subscribe to the Switchfly Technical Blog"></a></li>
-    </ul>
-  </div>  
-  <div class="fourteen columns omega post-info">
+  <div class="sixteen columns post-info">
     <div class="alpha two columns">
       <img class="author-image" src="/tech-blog/images/{{ page.author-image }}" alt="{{ page.author }}" />
     </div>
@@ -32,7 +22,17 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="fourteen columns post-body">
+  <div class="two columns alpha post-social">
+    <ul class="socials">
+      <li class="twitter">
+        <a href="" title="Tweet this article"></a>
+      </li>
+      <li class="email"><a href="" title="Email this article"></a></li>
+      <li class="linkedin"><a href="" title="Post this article to LinkedIn"></a></li>
+      <li class="rss"><a href="" title="Subscribe to the Switchfly Technical Blog"></a></li>
+    </ul>
+  </div>    
+  <div class="fourteen columns omega post-body">
     {{ content }}
   </div>
 </article>
