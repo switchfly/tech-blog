@@ -129,6 +129,12 @@ left: 0;}
 	/*background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
 	height: 294px;*/
 	background: $link-color;
+	margin-bottom: 1em;
+  	padding-bottom: 1em;
+  	border-top: 1px solid $line-color;
+  	color: #fff;
+  	background: $headfoot-background;
+  	width: 100%;
 }
 
 .header-content h1 {
@@ -137,10 +143,7 @@ left: 0;}
 }
 
 .header-content h1 a {
-	color: #c8ced3;
-	position: absolute;
-	bottom: 120px;
-	left: 230px;
+	color: #fff;
 }
 
 .header-content h1 a:hover {
@@ -173,10 +176,10 @@ footer {
 footer {
   margin-top: 1em;
   padding-top: 1em;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid $line-color;
   font-size: .8em;
   color: #fff;
-  background: #333f48;
+  background: $headfoot-background;
   width: 100%;
 }
 
