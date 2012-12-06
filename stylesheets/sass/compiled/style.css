@@ -401,6 +401,10 @@ legend span {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #post-list h1 {
+    font-size: 28px;
+    line-height: 26px; } }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
   #post-list h1 {
@@ -1221,7 +1225,7 @@ footer .sixteen {
   position: fixed; }
 
 /* ---------
-homepage
+	homepage
 -----------*/
 /*blog home*/
 .post-homePage {
