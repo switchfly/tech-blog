@@ -1156,7 +1156,8 @@ pre, code {
   top: 0;
   left: 0;
   background: #333f48;
-  z-index: 9; }
+  z-index: 9;
+  box-shadow: 0 0 20px #fff; }
 
 .site-header .sticky-top {
   background: #333f48;
@@ -1171,7 +1172,6 @@ pre, code {
 .header-content {
   /*background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
   height: 294px;*/
-  background: #dc291c;
   margin-bottom: 1em;
   padding-bottom: 1em;
   color: #fff;
