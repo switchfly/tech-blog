@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<!-- Wraps each post on the post page -->
+<!-- Wraps single post on the POST (not home) page -->
 <article id="post-page">
-  <div class="thirteen columns post-title">
+  <div class="sixteen columns post-title">
       <h1>{{ page.title }}</h1>
   </div>
   <div class="two columns alpha post-social">
@@ -17,11 +17,11 @@ layout: default
       <li class="rss"><a href="" title="Subscribe to the Switchfly Technical Blog"></a></li>
     </ul>
   </div>  
-  <div class="eleven columns omega post-info">
+  <div class="sixteen columns omega post-info">
     <div class="alpha two columns">
       <img class="author-image" src="/tech-blog/images/{{ page.author-image }}" alt="{{ page.author }}" />
     </div>
-    <div class="omega nine columns">
+    <div class="omega fourteen columns">
       <div class="date">
         <p>{{page.date | date: "%B %d" }}</p>
         <p class="year">{{ page.date | date: "%Y" }}</p>
@@ -32,7 +32,7 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="eleven columns post-body">
+  <div class="fourteen columns post-body">
     {{ content }}
   </div>
 </article>
