@@ -1169,8 +1169,9 @@ pre, code {
   left: 0; }
 
 .header-content {
-  background: transparent url("/tech-blog/images/headerBg.png") 50% 0 no-repeat;
-  height: 294px; }
+  /*background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
+  height: 294px;*/
+  background: #dc291c; }
 
 .header-content h1 {
   margin-bottom: 0;

@@ -126,8 +126,9 @@ top: -21px;
 left: 0;}
 
 .header-content {
-	background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
-	height: 294px;
+	/*background: transparent url('/tech-blog/images/headerBg.png') 50% 0 no-repeat;
+	height: 294px;*/
+	background: $link-color;
 }
 
 .header-content h1 {
