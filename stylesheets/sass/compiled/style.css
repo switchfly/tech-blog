@@ -1174,17 +1174,13 @@ pre, code {
   background: #dc291c;
   margin-bottom: 1em;
   padding-bottom: 1em;
-  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
   color: #fff;
   background: #333f48;
   width: 100%; }
 
-.header-content h1 {
-  margin-bottom: 0;
-  font-size: 56px; }
-
 .header-content h1 a {
-  color: #fff; }
+  color: #c8ced3; }
 
 .header-content h1 a:hover {
   color: #fff; }
@@ -1222,7 +1218,7 @@ footer .sixteen {
   margin: 0 auto; }
 
 .container {
-  padding-top: 310px; }
+  padding-top: 120px; }
 
 #sidebar nav {
   position: fixed; }
@@ -1231,20 +1227,20 @@ footer .sixteen {
 homepage
 -----------*/
 /*blog home*/
-.post-home {
+.post-homePage {
   border-bottom: 1px solid #cccccc;
   overflow: hidden;
   padding-bottom: 20px; }
-  .post-home h1 {
+  .post-homePage h1 {
     font-size: 30px;
     line-height: 36px;
     font-weight: 300;
     letter-spacing: 1px;
     margin-top: 12px; }
-  .post-home .post-summary {
+  .post-homePage .post-summary {
     margin-top: 16px; }
 
-.post-home:last-of-type {
+.post-homePage:last-of-type {
   border-bottom: 0; }
 
 .date {
