@@ -1323,6 +1323,12 @@ footer .sixteen {
     -webkit-opacity: 1;
     -o-opacity: 1;
     opacity: 1; }
+  .socials li a,
+  .socials li a:hover {
+    -moz-transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s; }
   .socials .email a {
     background-position: 0 -32px; }
   .socials .linkedin a {

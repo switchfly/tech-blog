@@ -313,6 +313,14 @@ footer .sixteen {
 		opacity: 1;
 	}
 
+	li a,
+	li a:hover {
+		-moz-transition: all ease-in-out .5s;
+		-webkit-transition: all ease-in-out .5s;
+		-o-transition: all ease-in-out .5s;
+		transition: all ease-in-out .5s;
+	}
+
 	.email a {
 		background-position: 0 -32px;
 	}
@@ -324,4 +332,5 @@ footer .sixteen {
 	.rss a {
 		background-position: 0 -96px;
 	}
+
 } /* End .socials */	
