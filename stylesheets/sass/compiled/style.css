@@ -1197,7 +1197,7 @@ nav ul {
 
 .header-content,
 footer {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   padding: 0;
   position: relative; }
@@ -1212,7 +1212,6 @@ footer {
   width: 100%; }
 
 footer .sixteen {
-  width: 960px;
   margin: 0 auto; }
 
 .container {
