@@ -285,6 +285,11 @@ footer .sixteen {
 	height: auto;
 }
 
+.post-social {
+	min-height: 500px;
+	overflow: hidden;
+}
+
 /* Nested Socials Styles */
 .socials {
 	list-style: none;
@@ -334,12 +339,9 @@ footer .sixteen {
 		background-position: 0 -96px;
 	}
 
-} /* End .socials */	
+} 
 
-.post-social {
-	min-height: 500px;
-	overflow: hidden;
-}
+/* End .socials */	
 
 .addthis_toolbox a span {
 	margin: 5px 0;
