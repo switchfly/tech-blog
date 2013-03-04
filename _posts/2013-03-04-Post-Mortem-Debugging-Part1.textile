@@ -2,7 +2,7 @@
 layout: post
 title: Designing to Support Post-Mortem Debugging, Part 1
 author: E. Harold Williams
-author-image: scottgalloway.jpg
+author-image: hwilliams.jpg
 summary: Programs have bugs. There is extensive literature about how to avoid shipping bugs with a system and we, at Switchfly, do our best to follow modern practices. To improve our code quality we use specification reviews, pair programming, code reviews, unit testing, integration testing, and robot driven, web based end-to-end testing in addition to a highly qualified QA team doing manual testing.
 ---
 
