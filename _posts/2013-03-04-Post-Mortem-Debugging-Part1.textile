@@ -8,24 +8,6 @@ summary: Programs have bugs. There is extensive literature about how to avoid sh
 
 h1. {{ page.title }}
 
-_italics_, *bold*, and <code>code()</code>. 
-
-{% highlight html linenos %}
-<div class="date">
-	<span>blah</span>
-</div>
-{% endhighlight %}
-
-* Bullet lists are easy too
-* Another one
-* Another one
-
-# A numbered list
-# Which is numbered
-# With periods and a space
-
-------------------
-
 Programs have bugs. 
 
 There is extensive literature about how to avoid shipping bugs with a system and we, at Switchfly, do our best to follow modern practices. To improve our code quality we use specification reviews, pair programming, code reviews, unit testing, integration testing, and robot driven, web based end-to-end testing in addition to a highly qualified QA team doing manual testing.
