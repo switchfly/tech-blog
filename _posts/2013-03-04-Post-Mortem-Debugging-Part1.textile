@@ -49,11 +49,11 @@ We also encourage our programmers to code defensively and proactively look for u
 
 {% highlight java linenos %}
 switch (status) {
-	“success”:
+	"success":
 		doSomething();
 		break;
 
-	“failure”:
+	"failure":
 		doSomethingElse();
 		break:
 }
@@ -63,16 +63,16 @@ should be written as follows:
 
 {% highlight java linenos %}
 switch (status) {
-	“success”:
+	"success":
 		doSomething();
 		break;
 
-	“failure”:
+	"failure":
 		doSomethingElse();
 		break:
 
 	default:
-		throw createException(“This is impossible, but it happened”);
+		throw createException("This is impossible, but it happened");
 }
 {% endhighlight %}
 
