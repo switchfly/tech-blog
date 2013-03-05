@@ -15,7 +15,7 @@ h2. High Level Technical Goals
 * Must use RWD (Responsive web design) - i.e. the site scales appropriately to various device sizes
 * Must allow technical and design flexibility while staying lightweight
 
-h2. Hosting / Updating
+h3. Hosting / Updating
 
 I considered several options, including blog authoring tools like Blogger, Drupal, Wordpress, etc, but in the end those all felt a little cumbersome for what we needed. Additionally, creating a technical blog seemed to require a bit less structure than what those tools provided. In the end, I chose GitHub for a few notable reasons:
 
@@ -26,11 +26,11 @@ I considered several options, including blog authoring tools like Blogger, Drupa
 ** Utilizes Textile for post rendering
 # GitHub Pages utlizes "Liquid":http://liquidmarkup.org/ for logic and variables
 
-h3. Why Textile and not Markdown?
+h4. Why Textile and not Markdown?
 
 A personal preference. Similar to my below discussion on .scss vs .sass, I find that the textile syntax is clearer; for example, heading levels in textile are noted as (h1. h2. h3., ...), and in markdown they are (#, ##, ###, ...); when you get a few heading levels down, it's pretty tough in markdown to figure out if you're at an H4 (####) level or H5 (#####) level without resorting to actually counting pound signs. A nice "comparison":http://mojomojo.org/documentation/textile_vs_markdown can be found here. 
 
-h3. Sass Support
+h4. Syntatically Awesome Style Sheets (SASS)
 
 Another great out of the box feature of GitHub Pages is their support of "SASS":http://sass-lang.com/. I like to think of SASS as what will be (very likely in my view) supported in future CSS specs, but usable today through clever compilation. I generally prefer .scss syntax over .sass syntax, as I believe it reads much more like real CSS code than does .sass, even though .sass is a bit more terse. For use in a big team like ours, I think adhering closely to commonly understood syntax is best.
 
@@ -38,7 +38,7 @@ h3. Syntax Highlighting
 
 We are using Pygments for our code highlighting here in our blog; I find it easy, and plenty nice.
 
-h2. Responsive Web
+h3. Responsive Web
 
 Again, there are many framework options here to choose from including Bootstrap, Foundation, etc. In the end, I chose to go with "Skeleton":http://www.getskeleton.com/; here's why...
 
@@ -46,7 +46,7 @@ When I was looking at my options, I found that while frameworks like Bootstrap a
 
 Plus, at a minuscule 28kb, it's plenty lightweight.
 
-h2. Miscellaneous stuff
+h3. Miscellaneous stuff
 
 In addition to all of the above, I have baked in some other things into the site to allow for some fancier UI down the road:
 
