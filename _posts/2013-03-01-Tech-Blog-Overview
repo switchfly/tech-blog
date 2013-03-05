@@ -50,7 +50,10 @@ h2. Miscellaneous stuff
 
 In addition to all of the above, I have baked in some other things into the site to allow for some fancier UI down the road:
 
-* "JQuery":http://jquery.com
-* "Modernizr":http://modernizr.com
-* "AddThis":http://www.addthis.com
+* "JQuery":http://jquery.com (for finding stuff on the page and doing fancy stuff with it)
+* "Modernizr":http://modernizr.com (for feature detection)
+* "AddThis":http://www.addthis.com (for article sharing)
 
+h2. Wrapping Up
+
+In the end, I think we created a flexible, lightweight, and relatively simple blog for us to play with and share our learnings with the community. Over time, I'm sure we'll 
