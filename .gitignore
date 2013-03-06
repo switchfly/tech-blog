@@ -5,3 +5,5 @@ _sample-posts/.DS_Store
 images/.DS_Store
 js/.DS_Store
 js/libs/.DS_Store
+stylesheets/sass/.sass-cache/*
+stylesheets/sass/compiled/style.css
