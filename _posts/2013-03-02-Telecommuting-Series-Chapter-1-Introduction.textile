@@ -1,0 +1,41 @@
+---
+layout: post
+author: Kevin Baughman
+author-image: kevin_baughman.jpg
+title: Telecommuting Series, Chapter 1 - Introduction
+summary: In this series of articles, I intend to share my experiences on working remotely full time, and provide suggestions on how to make telecommuting as successful as possible.
+
+---
+
+I have worked for Switchfly for over 8 years and for the first 3 years I worked in the corporate office.  However, I moved to another state (New Mexico and then later Texas) and so for the last 5 years I have been telecommuting from my home office.  Throughout that time Switchfly has been very supportive and willing to learn with me to make telecommuting as effective as possible.  In fact, at this time there are at least 7 full time employees that live outside of California who also telecommute. In this series of articles, I intend to share my experiences and cover the following topics.  If you have any other suggestions please let us know.
+
+This will be a four part series:
+
+## Telecommuting Series | Chapter 1: Introduction
+## Telecommuting Series | Chapter 2: Technology
+## Telecommuting Series | Chapter 3: Home Office
+## Telecommuting Series | Chapter 4: Putting it all together
+
+* Technology
+* Home office
+## Remoting in to a workplace computer from home so everything is within the firewall
+## Replicating a workplace environment at home, including database, etc
+* Geographic location flexibility
+## Location in home
+## Ergonomics (chair, desk, monitor)
+## Health (sitting, standing, breaks
+## Hours (different time zones)
+* Geographic location flexibility
+## Company support regarding moving to a new location
+## Support of significant other regarding their location needs
+## Ability to work even when on long trips/vacations
+* Pair programming when the pair are geographically separated
+* Leading a project remotely
+* Emotional toll
+## Feeling not part of the group
+## Need for multiple trips to workplace to get reconnected
+## Usefulness of employee pictures
+* Health Care
+## Different plans based on State (e.g. California, New Mexico, Texas)
+
+!/tech-blog/images/telecommute-office.jpg(Home office setup)!
