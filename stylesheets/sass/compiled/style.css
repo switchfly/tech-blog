@@ -1304,7 +1304,8 @@ footer .sixteen {
   margin-left: 0; }
 
 .post-body img {
-  width: 90%;
+  max-width: 90%;
+  width: auto;
   height: auto; }
 
 .post-social {
