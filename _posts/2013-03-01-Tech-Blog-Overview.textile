@@ -7,8 +7,6 @@ summary: A technical overview of this blog including libraries used and why part
 
 ---
 
-h1. {{ page.title }}
-
 h2. High Level Technical Goals
 
 * Must be easy to host and update
