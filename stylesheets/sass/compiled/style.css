@@ -1,3 +1,4 @@
+/* woohoo */
 /*
 * Skeleton V1.2
 * Copyright 2011, Dave Gamache
@@ -1305,6 +1306,7 @@ footer .sixteen {
 
 .post-social {
   min-height: 500px;
+  position: relative;
   overflow: hidden; }
 
 /* Nested Socials Styles */
