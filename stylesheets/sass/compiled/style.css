@@ -1274,11 +1274,14 @@ footer .sixteen {
 #post-list .post-body {
   margin-top: 12px;
   font-size: 12px;
-  line-height: 16px; }
-
-#post-list .post-body {
+  line-height: 16px;
   display: none;
   text-align: justify; }
+
+#post-list .post-body h2,
+#post-list .post-body h3,
+#post-list .post-body h4 {
+  text-align: left; }
 
 #post-list #post-page .post-body {
   display: block; }
