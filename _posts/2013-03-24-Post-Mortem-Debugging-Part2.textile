@@ -250,7 +250,7 @@ When a booking a created, it is linked to all the log files used to create that 
 
 When pulling up a complete booking here is a small subset of the logs that are available for research:
 
-!/tech-blog/images/log-list-img.png!
+!/tech-blog/images/log-list-img1.png!
 !/tech-blog/images/log-list-img2.png!
 !/tech-blog/images/log-list-img3.png!
 
