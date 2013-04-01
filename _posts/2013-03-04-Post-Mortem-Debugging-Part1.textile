@@ -4,65 +4,111 @@ title: Designing to Support Post-Mortem Debugging, Part 1
 author: E. Harold Williams
 author-image: hwilliams.jpg
 summary: Programs have bugs. There is extensive literature about how to avoid shipping bugs with a system and we, at Switchfly, do our best to follow modern practices. To improve our code quality we use specification reviews, pair programming, code reviews, unit testing, integration testing, and robot driven, web based end-to-end testing in addition to a highly qualified QA team doing manual testing.
+
 ---
 
-Programs have bugs. 
+h2. Programs have bugs. 
 
 There is extensive literature about how to avoid shipping bugs with a system and we, at Switchfly, do our best to follow modern practices. To improve our code quality we use specification reviews, pair programming, code reviews, unit testing, integration testing, and robot driven, web based end-to-end testing in addition to a highly qualified QA team doing manual testing.
 
 Sadly, we still release bugs.
 
-Knowing that there will be bugs in production, we have designed our system to gather as much information as possible to facilitate diagnosing issues after they occur, and to notify us of certain classes of bugs without waiting for client complaints.
+Knowing that there will be bugs in production, we designed and built our system to proactively alert us of certain classes of bugs and to record as much information as possible to facilitate quick diagnosis.
 
-Two issues that make our system hard to test and bugs hard to diagnose are the highly configurable nature of our application and the large number of external systems that we interact with. The configurability makes it possible for clients to configure their system in ways we had not anticipated or tested, leading to unusual paths through our code. External systems frequently give us results we had not seen before as they upgrade their systems and evolve their API’s. These, coupled with the complex and evolving business rules of the travel industry, make it vital for us to have as much information as possible when researching issues we or our clients discover.
+There are two aspects of our system that complicate debugging production issues:
 
-One category of bugs we see is runtime exceptions. These include, but are not limited to,
+# Our system is highly configurable. With a large number of configurations, it becomes impossible to test the system with every combination of possible configurations. Our clients can configure the system in ways we had not anticipated, leading to unusual paths through our code.
+# We interact with a large number of external systems. Indeed, one of our core competencies at Switchfly is our ability to connect and interact with a wide range of external systems. However, being out of our control, these systems frequently return results that we had not planned on or seen before, either because of edge cases we had not coded for, or because they have changed their system behavior without notifying us.
+
+Coupled with the complex and evolving business rules of the travel industry, this makes it vital for us to have as much information as possible when researching issues we or our clients discover.
+
+h2. Dealing With Bugs That Manifest as Exceptions
+One category of bugs we see is runtime exceptions, such as,
+
 * Exceptions thrown by the language (null pointers, indexes out of range, etc.)
 * Exceptions thrown by libraries (network connection lost, database constraint errors, etc.)
 * Exceptional conditions detected by our code
 
-We have reports, which both we and our clients can access, that will display all the exceptions within a search timeframe along with more than a dozen different values describing what the system was doing when the exception occurred. This report can even be configured to compare the errors of given time range with alternate time ranges to see behavior changes, such as around the time of a release.
+There are three major “best practices” we have developed at Switchfly for dealing with exceptions in a way that enables us to be alerted to production issues and have the information we need to deal with them.
 
-Our coding standards specify that any exception caught must be recorded in the database unless it is re-thrown. This provides us with a repository of exceptions that have occurred in a running system, even when there is a recovery strategy that can allow the application to continue and serve a reasonable response to the customer. Along with the exception, we record the context in which the system was running as the time of the exception as well as the stack. 
+h2. Record Exceptions When They Are Caught
 
-We also encourage our programmers to code defensively and proactively look for unexpected conditions and throw exceptions rather than continuing. We would suggest that the following code, for example:
+We record an exception in a database table when we catch an exception. There were two contending strategies we considered when designing our exception framework. One was to record exceptions at the highest level. For example, if web page creates a thread and you could have a try/catch block around the whole thread that caught and recorded exceptions. Then the rule would be that you must either rethrow the exception or record it. 
 
-{% highlight java linenos %}
+We chose the opposite approach, where we record an exception as soon as it is caught. This seemed a simpler approach with which it was easier to enforce correctness. Every catch block in our system should have code that records the exception. If we re-throw an exception, we know it has been recorded, but also carry along information so that callers can add information to the database if desired.
+
+Since the goal of recording these exceptions is port-mortem debugging, we record extensive data (nearly 30 attributes) with each exception. Some examples of the data we record are:
+
+* The timestamp
+* The stack
+* The name of a log file, if it exists. I will talk more about log files in the next blog.
+* The machine name (an important clue if an exception is happening on just one or a few machines in a large server farm)
+* if an agent was logged in (and who he was) or if this was triggered by a customer
+* The name of the external system with which we were communicating and it’s error message
+* An error code and error category along with error parameters
+* If this error was displayed to the customer using our site and, if so, the error message that was presented.
+* Details about browser hitting the site, the referrer, and the history of pages in the current session that led to this error.
+
+This provides us with a repository of exceptions that have occurred in a running system. Some errors do not even manifest themselves to customers because we can recover from the condition, but this strategy guarantees that it is recorded so that condition will be investigated and fixed..
+
+h2. Code To Detect Exceptional Conditions
+
+We encourage our programmers to code defensively and proactively look for unexpected conditions and throw exceptions rather than continuing. We would suggest that the following code, for example:
+
+<pre><code>
 switch (status) {
-	"success":
-		doSomething();
-		break;
+  “success”:
+    doSomething();
+    break;
 
-	"failure":
-		doSomethingElse();
-		break:
+  “failure”:
+    doSomethingElse();
+    break:
 }
-{% endhighlight %}
+</code></pre>
 
 should be written as follows:
 
-{% highlight java linenos %}
+<pre><code>
 switch (status) {
-	"success":
-		doSomething();
-		break;
+  “success”:
+    doSomething();
+    break;
 
-	"failure":
-		doSomethingElse();
-		break:
+  “failure”:
+    doSomethingElse();
+    break:
 
-	default:
-		throw createException("This is impossible, but it happened");
+  default:
+    throw createException(“This is impossible, but it happened”);
 }
-{% endhighlight %}
+</code></pre>
 
-This is a very simple example, but programs are full of instances where there are implied pre-conditions. Making these assumptions explicit makes the program more robust and makes violations more visible. In the example above, if we wanted to simply log the error, but continue processing, we would remove the “throw”. The <code>createException()</code> call logs the exception in our database, so it will show up in reports.
+This is a very simple example, but programs are full of instances where there are implied pre-conditions. Making these assumptions explicit makes the program more robust and makes violations more visible. In the example above, if we wanted to simply log the error, but continue processing, we would remove the “throw”. The “createException()” call logs the exception in our database, so it will show up in reports.
 
-So the key points regarding exception tracking in Switchfly are:
-# All exceptions are logged, even if the program can continue. Log entries contain extensive information about the context in which the exception occurred.
-# Code explicitly checks assumptions about inputs and throws exception when violated.
-# We provide a report that can search and sort exceptions in the database and compare counts with previous time periods.
+h2. Provide Tools To Mine Exception History
 
-Unfortunately, some errors don’t throw exceptions. Business logic errors occur either because a specification was incorrect, or because the code incorrectly implemented that specification. Sometimes we find that things break because services we access through an API start returning different results that our code interprets successfully, but incorrectly.
+The screen below shows our tool that allows a report to be generated for errors that have been recorded in our database. The top ¾ of the form allows parameters to limit the errors that are displayed in the report.
 
-In my next blog post I will describe what the Switchfly application does to facilitate investigating these issues. "Part 2":/tech-blog//2013/03/Post-Mortem-Debugging-Part2.html
+!admin-errors-search1.png!
+
+The “Group By” and “Results per page” control how the report is displayed. 
+
+!admin-errors-search2.png!
+
+The “Comparison” drop down allows the report to compare the error counts for the specified date range to be compared to previous weeks. This is very valuable when monitoring errors after a release, for example.
+
+!admin-errors-search3.png!
+
+Finally, you can drill in to a specific error to see its details and stack.
+
+!admin-errors-search4.png!
+
+h2. Summary and Looking Ahead
+The practices we follow to enable post-mortem debugging with exception errors are:
+
+# Record exceptions when they are caught. 
+# Code to detect exceptional conditions
+# Provide tools to mine exception history
+
+In my next blog post I will describe how we record enough information to investigate errors that don’t throw exceptions. Read on to "Part 2":/tech-blog//2013/03/Post-Mortem-Debugging-Part2.html

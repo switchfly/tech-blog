@@ -3,11 +3,11 @@ layout: post
 title: Designing to Support Post-Mortem Debugging, Part 2
 author: E. Harold Williams
 author-image: hwilliams.jpg
-summary: Digging deeper into the details of supporting post-mortem debugging.
+summary: The premise of my last post was that production systems will always have bugs and that it is important to design a system that makes it possible to research bugs after the fact. I looked at the practices we used to capture and report on exceptions thrown by a running system.
 
 ---
 
-The premise of my last blog was that production systems will always have bugs and that it is important to design a system that makes it possible to research bugs after the fact. I looked at the practices we used to capture and report on exceptions thrown by a running system.
+The premise of "my last post":/tech-blog//2013/03/Post-Mortem-Debugging-Part1.html was that production systems will always have bugs and that it is important to design a system that makes it possible to research bugs after the fact. I looked at the practices we used to capture and report on exceptions thrown by a running system.
 
 Exceptions are often the easiest kinds of bugs to fix. Some errors don’t throw exceptions. Business logic errors occur either because a specification was incorrect, or because the code incorrectly implemented that specification. Sometimes we find that things break because services we access through an API start returning different results that our code interprets successfully, but incorrectly.
 
