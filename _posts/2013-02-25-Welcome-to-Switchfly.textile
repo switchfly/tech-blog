@@ -13,17 +13,17 @@ We are starting a technology blog to share our experiences and best practices as
 
 Switchfly’s internationalized, software platform allows any business or brand to sell any product to anyone, anywhere, at anytime.  We use open-source and commercial software, lean/agile practices, and a smart, fun, and creative team to deliver high quality, robust solutions to our clients.  We work in independent, cross-functional agile teams.  Our technology stack consists of HTML, CSS, Twitter Bootstrap, JavaScript (jQuery, EmberJS, HandleBars), Freemarker, Java, Spring, Tomcat, Couchbase, Postgres, and CentOS Linux.  Engineering uses Intellij, Git, Jenkins, Clover and run either OSX or Linux.  IT uses Postgres, PgBouncer, GreenPlum, SOASTA, Capistrano, Splunk, TeaLeaf, AlertSite and VMWare.  We strive to shorten our development cycles, keep the build green, and the site live.
 
-!qa-team-img!
+!qa-team-img.jpg!
 
 We enhance and maintain a high availability, high traffic e-commerce platform for brand name clients across the globe - downtime is not an option.  We design features that must be coherent and consistent, yet customizable to meet different client requirements.  Our technology platform has to scale and handle unexpected traffic spikes as clients run marketing simultaneous marketing promotions.  We welcome these challenges!
 
 Twice a year, the entire company participates in a hackathon.  The below screenshot depicts one Hackathon project that resulted in a 10% increase in customer conversion.  Woo hoo!  We strongly encourage you to evangelize hackathons or innovation days at your organization.  "Atlassian’s guide":http://www.atlassian.com/company/about/shipit is a great template.
 
-!seats-remaining-img!
+!seats-remaining-img.jpg!
 
 Our team members consistently vote “the team” as the top reason for what makes Switchfly great.  We rotate people across platform features and provide opportunities to learn and code across the entire tech stack.  We are passionate about good design, continuous integration, test automation, retrospectives, and consistently improving our skills.
 
 !mudder-img!
 
-When not solving challenging problems and delivering value to our clients, we have fun!  Free drinks/snacks, company Wednesday lunches, ping pong tournaments, yoga, annual Giants game, hackathons, skip trip, Tough Mudder, and triathlon.  We are always looking for great people to join the team, follow us on "Facebook":https://www.facebook.com/Switchfly or apply today!
+When not solving challenging problems and delivering value to our clients, we have fun!  Free drinks/snacks, company Wednesday lunches, ping pong tournaments, yoga, annual Giants game, hackathons, skip trip, Tough Mudder, and triathlon.  We are always looking for great people to join the team, follow us on "Facebook":https://www.facebook.com/Switchfly or apply today.jpg!
 

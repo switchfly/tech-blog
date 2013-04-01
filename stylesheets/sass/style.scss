@@ -46,7 +46,8 @@ a:hover {
 	color: $link-hover-color;
 }
 
-img {
+img,
+p img {
 	margin: 1em 0;
 	border: 5px solid #ccc;		
 }

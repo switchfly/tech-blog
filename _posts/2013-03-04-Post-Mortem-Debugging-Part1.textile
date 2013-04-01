@@ -65,4 +65,4 @@ So the key points regarding exception tracking in Switchfly are:
 
 Unfortunately, some errors don’t throw exceptions. Business logic errors occur either because a specification was incorrect, or because the code incorrectly implemented that specification. Sometimes we find that things break because services we access through an API start returning different results that our code interprets successfully, but incorrectly.
 
-In my next blog post I will describe what the Switchfly application does to facilitate investigating these issues.
+In my next blog post I will describe what the Switchfly application does to facilitate investigating these issues. "Part 2":/tech-blog//2013/03/Post-Mortem-Debugging-Part2.html
