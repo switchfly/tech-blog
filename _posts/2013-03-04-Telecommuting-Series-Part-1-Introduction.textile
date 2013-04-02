@@ -2,7 +2,7 @@
 layout: post
 author: Kevin Baughman
 author-image: kevin_baughman.jpg
-title: Telecommuting Series, Chapter 1 - Introduction
+title: Telecommuting Series, Part 1 - Introduction
 summary: In this series of articles, I intend to share my experiences on working remotely full time, and provide suggestions on how to make telecommuting as successful as possible.
 
 ---
@@ -11,10 +11,10 @@ I have worked for Switchfly for over 8 years and for the first 3 years I worked 
 
 This will be a four part series:
 
-## Telecommuting Series | Chapter 1: Introduction
-## Telecommuting Series | Chapter 2: Technology
-## Telecommuting Series | Chapter 3: Home Office
-## Telecommuting Series | Chapter 4: Putting it all together
+## Telecommuting Series | Part 1: Introduction
+## Telecommuting Series | Part 2: Technology
+## Telecommuting Series | Part 3: Home Office
+## Telecommuting Series | Part 4: Putting it all together
 
 * Technology
 * Home office
