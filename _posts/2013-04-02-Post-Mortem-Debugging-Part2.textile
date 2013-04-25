@@ -7,7 +7,7 @@ summary: The premise of my last post was that production systems will always hav
 
 ---
 
-The premise of "my last post":/tech-blog//2013/03/Post-Mortem-Debugging-Part1.html was that production systems will always have bugs and that it is important to design a system that makes it possible to research bugs after the fact. I looked at the practices we used to capture and report on exceptions thrown by a running system.
+The premise of "my last post"://2013/03/Post-Mortem-Debugging-Part1.html was that production systems will always have bugs and that it is important to design a system that makes it possible to research bugs after the fact. I looked at the practices we used to capture and report on exceptions thrown by a running system.
 
 Exceptions are often the easiest kinds of bugs to fix. Some errors don’t throw exceptions. Business logic errors occur either because a specification was incorrect, or because the code incorrectly implemented that specification. Sometimes we find that things break because services we access through an API start returning different results that our code interprets successfully, but incorrectly.
 
@@ -34,7 +34,7 @@ We have a booking schema, that holds all the booking history of our system. This
 
 Our other schema holds configuration data. This includes configurations (basically a key/value map), product descriptions, agency and agent definitions, contracts that define how costs should be converted to points in our loyalty module, and many more things that are used to “set up” the system for use. The size of the configuration schema is not insignificant, but dramatically smaller than the booking schema. A typical client may have about 15 GB in the configuration schema.
 
-!/tech-blog/images/client-db-img.png!
+!/images/client-db-img.png!
 
 In general, administrators managing the system make changes in the configuration schema while customers or agents purchasing travel products make changes in the booking schema. Tables in the booking schema can refer to tables in the configuration schema, but not vice-versa. With this setup, it is possible to write scripts that copy just the configuration schema from the database and we have created scripts that create a mirror of the client production system in the developers test environment. 
 
@@ -232,11 +232,11 @@ A key for using log files for debugging is finding the one you need. We have don
 
 When you do a search on our system and create log files, they are saved in your session so you, as a developer or support person, can review them and save the names of logs that demonstrate some issue you are researching. Here is what our site looks like when debug mode is turned on:
 
-!/tech-blog/images/admin-img.png!
+!/images/admin-img.png!
 
 Everything above the black bar is additional information available only to support people authorized to turn on debug mode. Note the “session logs” link, which if clicked, gives you something like this:
 
-!/tech-blog/images/session-logs-img.png!
+!/images/session-logs-img.png!
 
 The session logs indicate that we have hit two web pages in this session (arc_waiting.cfm, which hosted a search form, and arc_process.cfm, which processed the search). arc_process.cfm generated a number of business service calls, some of which were in parallel threads, to process the search and ended up 6 discrete log files.
 
@@ -250,9 +250,9 @@ When a booking a created, it is linked to all the log files used to create that 
 
 When pulling up a complete booking here is a small subset of the logs that are available for research:
 
-!/tech-blog/images/log-list-img1.png!
-!/tech-blog/images/log-list-img2.png!
-!/tech-blog/images/log-list-img3.png!
+!/images/log-list-img1.png!
+!/images/log-list-img2.png!
+!/images/log-list-img3.png!
 
 h2. Summary
 
