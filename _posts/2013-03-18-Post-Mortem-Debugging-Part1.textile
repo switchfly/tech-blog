@@ -94,7 +94,7 @@ The screen below shows our tool that allows a report to be generated for errors 
 
 The “Group By” and “Results per page” control how the report is displayed. 
 
-!/images/admin-errors-search2.png!
+###. !/images/admin-errors-search2.png!
 
 The “Comparison” drop down allows the report to compare the error counts for the specified date range to be compared to previous weeks. This is very valuable when monitoring errors after a release, for example.
 
