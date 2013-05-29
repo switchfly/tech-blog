@@ -7,6 +7,8 @@ summary: A technical overview of this blog including libraries used and why part
 
 ---
 
+With the new Switchfly Technical Blog, I wanted to provide a quick overview of some of the technology desicions we made to support our goals, and why we made some of those choices.
+
 h2. High Level Technical Goals
 
 * Must be easy to host and update
