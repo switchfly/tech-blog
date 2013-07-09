@@ -23,6 +23,7 @@ There are two aspects of our system that complicate debugging production issues:
 Coupled with the complex and evolving business rules of the travel industry, this makes it vital for us to have as much information as possible when researching issues we or our clients discover.
 
 h2. Dealing With Bugs That Manifest as Exceptions
+
 One category of bugs we see is runtime exceptions, such as,
 
 * Exceptions thrown by the language (null pointers, indexes out of range, etc.)
@@ -105,6 +106,7 @@ Finally, you can drill in to a specific error to see its details and stack.
 !/images/admin-errors-search4.png!
 
 h2. Summary and Looking Ahead
+
 The practices we follow to enable post-mortem debugging with exception errors are:
 
 # Record exceptions when they are caught. 
