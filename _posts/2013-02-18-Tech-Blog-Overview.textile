@@ -56,4 +56,4 @@ In addition to all of the above, I have baked in some other things into the site
 
 h2. Wrapping Up
 
-In the end, I think we created a flexible, lightweight, and relatively simple blog for us to play with and share our learnings with the community. Over time, I'm sure we'll 
+In the end, I think we created a flexible, lightweight, and relatively simple blog for us to play with and share our learnings with the community. Thanks for visiting!
