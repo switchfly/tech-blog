@@ -113,4 +113,4 @@ The practices we follow to enable post-mortem debugging with exception errors ar
 # Code to detect exceptional conditions
 # Provide tools to mine exception history
 
-In my next blog post I will describe how we record enough information to investigate errors that don’t throw exceptions. Read on to "Part 2":http://blog.switchfly.com//2013/03/Post-Mortem-Debugging-Part2.html
+In my next blog post I will describe how we record enough information to investigate errors that don’t throw exceptions. Read on to "Part 2":http://blog.switchfly.com//2013/04/Post-Mortem-Debugging-Part2.html
