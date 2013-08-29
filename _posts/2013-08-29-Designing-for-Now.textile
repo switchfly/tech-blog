@@ -7,6 +7,8 @@ summary: The future doesn't matter
 
 ---
 
+h1.Designing for Now
+
 The future doesn't matter.
  
 Designers and developers think a lot about "the future" — the next iteration of the product, the new version of the UX, the upcoming release. Users don't care about that future. They care about right now; about booking this month's bachelor party, Disney extravaganza, or flight to the in-laws'.
