@@ -11,4 +11,4 @@ h1. From Prototype To Ember.js
 
 Switchfly hosted the August Ember Meetup for 70 people.  Switchfly's Steve Davie shared our story moving from legacy unstructured DOM query/AJAX to Ember.js. 
 
-Watch: <a href="../videos/August_Ember_Meetup/index.htm">August Ember Meetup - From Prototype To Ember.js</a>
+Watch: "August Ember Meetup - From Prototype To Ember.js":videos/August_Ember_Meetup/index.htm
