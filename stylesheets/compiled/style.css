@@ -1169,23 +1169,23 @@ pre, code {
   -webkit-box-shadow: 0 0 30px #333;
   -o-box-shadow: 0 0 30px #333;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
-
-.site-header .sticky-top {
-  background: #333f48;
-  height: 22px; }
-
-.site-header #switchfly {
-  color: #fff;
-  position: absolute;
-  top: -21px;
-  left: 0; }
+  .site-header h1 {
+    float: right; }
+  .site-header .sticky-top {
+    background: #333f48;
+    height: 22px; }
+  .site-header #switchfly {
+    color: #fff;
+    position: absolute;
+    left: 0; }
 
 .header-content,
 .footer-content {
   width: 940px;
   margin: 0 auto;
   padding: 0;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .header-content {
   padding-top: 18px; }
