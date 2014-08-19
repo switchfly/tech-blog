@@ -1169,6 +1169,10 @@ pre, code {
   -o-box-shadow: 0 0 30px #333;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
 
+.site-header h1 {
+  float: right;
+}
+
 .site-header .sticky-top {
   background: #333f48;
   height: 22px; }
@@ -1176,7 +1180,6 @@ pre, code {
 .site-header #switchfly {
   color: #fff;
   position: absolute;
-  top: -21px;
   left: 0; }
 
 .header-content,
