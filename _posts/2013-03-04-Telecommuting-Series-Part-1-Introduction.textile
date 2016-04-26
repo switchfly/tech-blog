@@ -38,7 +38,7 @@ This will be a four part series:
 * Health Care
 ## Different plans based on State (e.g. California, New Mexico, Texas)
 
-Read on to "Part 2":http://blog.switchfly.com//article/Telecommuting-Series-Part-2-Technology.html
+Read on to "Part 2":http://blog.switchfly.com///article/Telecommuting-Series-Part-2-Technology/
 
 h5.My current home office setup
 

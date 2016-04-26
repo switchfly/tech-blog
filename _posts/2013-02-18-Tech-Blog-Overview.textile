@@ -23,12 +23,14 @@ I considered several options, including blog authoring tools like Blogger, Drupa
 # With "GitHub Pages":http://pages.github.com/, I could host the site easily
 # GitHub Pages utilizes "Jekyll":https://github.com/mojombo/jekyll/wiki for site generation:
 **  Templates for layouts of pages and partials
-** Utilizes Textile for post rendering
+** Utilizes -Textile- Markdown for post rendering
 # GitHub Pages utlizes "Liquid":http://liquidmarkup.org/ for logic and variables
 
 h3. Why Textile and not Markdown?
 
 A personal preference. Similar to my below discussion on .scss vs .sass, I find that the textile syntax is clearer; for example, heading levels in textile are noted as (h1. h2. h3., ...), and in markdown they are (#, ##, ###, ...); when you get a few heading levels down, it's pretty tough in markdown to figure out if you're at an H4 (####) level or H5 (#####) level without resorting to actually counting pound signs. A nice "comparison":http://mojomojo.org/documentation/textile_vs_markdown can be found here. 
+
+*Update:* Github Pages have deprecated support for Textile as of May 1st, 2016; so, our pages will be using Markdown now instead. Honestly, the syntax distinction is pretty trivial to overcome. :-)
 
 h3. Sass Support
 
