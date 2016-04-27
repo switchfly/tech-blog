@@ -45,7 +45,7 @@ This is where we define what our application styles consume. I think of theme fi
 
 In CSS preprocessors like Sass, you can set a variable’s value to itself reference a variable. For example, you might define the primary brand color as blue, and inherit that definition in other variables:
 
-```
+```scss
 $brand-primary: blue;
 $btn-primary-bg-color: $brand-primary;
 $link-color: $brand-primary;
@@ -58,13 +58,13 @@ Because of how I define variables that then are consumed later in increasingly s
 
 Now that we have our application defaults described, we can override any that we wish for a given brand. For example, above we defined our primary brand color to blue, but let’s say the primary brand color for this client is red. In their brand theme, they’d simply override our value with theirs:
 
-```
+```scss
 $brand-primary: red;
 ```
 
-And that’s it. Of course, in our Step 2.1 code example earlier, we also defined $link-color to $brand-primary, meaning by simply setting $brand-primary to red, links, btn-primary, and “clickable element” (this is a made up example component) are also now red. Our application theme made an assumption that link color (and btn-primary, etc) would commonly be the same color as your primary brand, but that may not be the case (I’ve found that assumption to be reasonable; ~10% of our themes override this with a specific link text color). Setting the link color for the brand is simple enough:
+And that’s it. Of course, in our Step 2.1 code example earlier, we also defined `$link-color` to `$brand-primary`, meaning by simply setting `$brand-primary` to red, links, btn-primary, and “clickable element” (this is a made up example component) are also now red. Our application theme made an assumption that link color (and btn-primary, etc) would commonly be the same color as your primary brand, but that may not be the case (I’ve found that assumption to be reasonable; ~10% of our themes override this with a specific link text color). Setting the link color for the brand is simple enough:
 
-```
+```scss
 $brand-primary: red;
 $link-color: darkred;
 ```
@@ -75,14 +75,15 @@ Because I want to maintain all the layout and structural behaviors, including wh
 
 #### Step 2.2.1 — Sub-brand Themes
 
-A given client may have multiple sub-brands; for example, a credit card company or loyalty membership program may have several tiers (silver, gold, etc). But, these sub-brands rarely differ beyond setting a few colors; that is, they inherit their brand’s base theme. We do this by basically defining a “_base.scss” partial that defines all of the shared layout and default variable definitions, which we include in our brand theme files, and then set overriding variables specific to our sub-brand as needed in each sub-brand’s theme.
+A given client may have multiple sub-brands; for example, a credit card company or loyalty membership program may have several tiers (silver, gold, etc). But, these sub-brands rarely differ beyond setting a few colors; that is, they inherit their brand’s base theme. We do this by basically defining a `_base.scss` partial that defines all of the shared layout and default variable definitions, which we include in our brand theme files, and then set overriding variables specific to our sub-brand as needed in each sub-brand’s theme.
 
 ### Step 3 — Apply our variables
 
 Now that we’ve set all the variables that define our theme, our application stylesheets take over. Here is where we CONSUME all our variables using CSS to select the elements to which each variable applies and assigning them as values to the appropriate property; for example:
 
-```
-// Links
+
+```scss
+//Links
 
 a {
   color: $link-color;
@@ -96,9 +97,9 @@ a {
 }
 ```
 
-“&” in Sass is a reference to it’s parent selector; above we have nested “&:hover” inside the braces for the “a” element selector, which when compiled, the .css will be outputted like this:
+`&` in Sass is a reference to it’s parent selector; above we have nested `&:hover` inside the braces for the `a` element selector, which when compiled, the .css will be outputted like this:
 
-```
+```css
 a {
   color: darkred;
   text-decoration: underline;

@@ -7,7 +7,7 @@ summary: Programs have bugs. There is extensive literature about how to avoid sh
 
 ---
 
-h2. Programs have bugs. 
+## Programs have bugs
 
 There is extensive literature about how to avoid shipping bugs with a system and we, at Switchfly, do our best to follow modern practices. To improve our code quality we use specification reviews, pair programming, code reviews, unit testing, integration testing, and robot driven, web based end-to-end testing in addition to a highly qualified QA team doing manual testing.
 
@@ -17,12 +17,12 @@ Knowing that there will be bugs in production, we designed and built our system 
 
 There are two aspects of our system that complicate debugging production issues:
 
-# Our system is highly configurable. With a large number of configurations, it becomes impossible to test the system with every combination of possible configurations. Our clients can configure the system in ways we had not anticipated, leading to unusual paths through our code.
-# We interact with a large number of external systems. Indeed, one of our core competencies at Switchfly is our ability to connect and interact with a wide range of external systems. However, being out of our control, these systems frequently return results that we had not planned on or seen before, either because of edge cases we had not coded for, or because they have changed their system behavior without notifying us.
+* Our system is highly configurable. With a large number of configurations, it becomes impossible to test the system with every combination of possible configurations. Our clients can configure the system in ways we had not anticipated, leading to unusual paths through our code.
+* We interact with a large number of external systems. Indeed, one of our core competencies at Switchfly is our ability to connect and interact with a wide range of external systems. However, being out of our control, these systems frequently return results that we had not planned on or seen before, either because of edge cases we had not coded for, or because they have changed their system behavior without notifying us.
 
 Coupled with the complex and evolving business rules of the travel industry, this makes it vital for us to have as much information as possible when researching issues we or our clients discover.
 
-h2. Dealing With Bugs That Manifest as Exceptions
+## Dealing With Bugs That Manifest as Exceptions
 
 One category of bugs we see is runtime exceptions, such as,
 
@@ -32,7 +32,7 @@ One category of bugs we see is runtime exceptions, such as,
 
 There are three major “best practices” we have developed at Switchfly for dealing with exceptions in a way that enables us to be alerted to production issues and have the information we need to deal with them.
 
-h2. Record Exceptions When They Are Caught
+## Record Exceptions When They Are Caught
 
 We record an exception in a database table when we catch an exception. There were two contending strategies we considered when designing our exception framework. One was to record exceptions at the highest level. For example, if web page creates a thread and you could have a try/catch block around the whole thread that caught and recorded exceptions. Then the rule would be that you must either rethrow the exception or record it. 
 
@@ -56,7 +56,7 @@ h2. Code To Detect Exceptional Conditions
 
 We encourage our programmers to code defensively and proactively look for unexpected conditions and throw exceptions rather than continuing. We would suggest that the following code, for example:
 
-<pre><code>
+```java
 switch (status) {
   “success”:
     doSomething();
@@ -66,11 +66,11 @@ switch (status) {
     doSomethingElse();
     break:
 }
-</code></pre>
+```
 
 should be written as follows:
 
-<pre><code>
+```java
 switch (status) {
   “success”:
     doSomething();
@@ -83,34 +83,34 @@ switch (status) {
   default:
     throw createException(“This is impossible, but it happened”);
 }
-</code></pre>
+```
 
 This is a very simple example, but programs are full of instances where there are implied pre-conditions. Making these assumptions explicit makes the program more robust and makes violations more visible. In the example above, if we wanted to simply log the error, but continue processing, we would remove the “throw”. The “createException()” call logs the exception in our database, so it will show up in reports.
 
-h2. Provide Tools To Mine Exception History
+## Provide Tools To Mine Exception History
 
 The screen below shows our tool that allows a report to be generated for errors that have been recorded in our database. The top ¾ of the form allows parameters to limit the errors that are displayed in the report.
 
-!/images/admin-errors-search1.png!
+![Admin Errors - Search 1](/images/admin-errors-search1.png)
 
 The “Group By” and “Results per page” control how the report is displayed. 
 
-!/images/admin-errors-search2.png!
+![Admin Errors - Search 2](/images/admin-errors-search2.png)
 
 The “Comparison” drop down allows the report to compare the error counts for the specified date range to be compared to previous weeks. This is very valuable when monitoring errors after a release, for example.
 
-!/images/admin-errors-search3.png!
+![Admin Errors - Search 3](/images/admin-errors-search3.png)
 
 Finally, you can drill in to a specific error to see its details and stack.
 
-!/images/admin-errors-search4.png!
+!![Admin Errors - Search 4](/images/admin-errors-search4.png)
 
-h2. Summary and Looking Ahead
+## Summary and Looking Ahead
 
 The practices we follow to enable post-mortem debugging with exception errors are:
 
-# Record exceptions when they are caught. 
-# Code to detect exceptional conditions
-# Provide tools to mine exception history
+* Record exceptions when they are caught.
+* Code to detect exceptional conditions
+* Provide tools to mine exception history
 
 In my next blog post I will describe how we record enough information to investigate errors that don’t throw exceptions. Read on to "Part 2":http://blog.switchfly.com///article/Post-Mortem-Debugging-Part2

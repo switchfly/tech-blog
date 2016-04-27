@@ -11,7 +11,7 @@ As a developer we are expected to use or at least be aware of a number of differ
  
 Below are some of technologies a developer would to be aware of at Switchfly, either directly or indirectly:
  
-h3.Client/Server:
+## Client/Server:
 
 * Couchbase Server – shared data
 * Git/Gitlab – source control
@@ -19,7 +19,7 @@ h3.Client/Server:
 * Apache/Tomcat – GUI
 * Coldfusion/Railo – legacy architecture
  
-h3.Other:
+## Other:
 
 * Intellij IDEA – Java IDE
 * Selenium – system/GUI testing
@@ -36,32 +36,30 @@ h3.Other:
 
 For the last few years I’ve been using the corporate VPN and RDP from a personal Windows PC to access my corporate PC located remotely.  
 
-h4.Advantages
+### Advantages
 
-# Most of the above technologies are located either on my remote PC or corporate servers (e.g., postgres server, couchbase server)
-# IT can maintain/backup the PC
-# I can access the corporate PC from any location in the world from just about any platform (e.g. an iPad or my Windows laptop)
+* Most of the above technologies are located either on my remote PC or corporate servers (e.g., postgres server, couchbase server)
+* IT can maintain/backup the PC
+* I can access the corporate PC from any location in the world from just about any platform (e.g. an iPad or my Windows laptop)
  
-h4.Disadvantages
+### Disadvantages
 
-# When my internet is down I can’t do any work
-# When the VPN is down I can’t do any work
-# When my corporate PC crashes I have to get someone at the corporate office reboot it
+* When my internet is down I can’t do any work
+* When the VPN is down I can’t do any work
+* When my corporate PC crashes I have to get someone at the corporate office reboot it
  
 However, as my corporate PC was getting a bit old, I was given the option to switch to a Macbook Pro laptop.   I decided to go that route which has the following:
 
-h4.Advantages
+### Advantages
 
-# I get a much faster machine
-# Because it is much faster, I can locally run Postgres, Couchbase, and other servers
-# I’m not dependent on the internet or the VPN (except on demand for GIT source code access)
-# The Macbook Pro can replace my Window’s laptop (which I was taking with me whenever I traveled)
+* I get a much faster machine
+* Because it is much faster, I can locally run Postgres, Couchbase, and other servers
+* I’m not dependent on the internet or the VPN (except on demand for GIT source code access)
+* The Macbook Pro can replace my Window’s laptop (which I was taking with me whenever I traveled)
  
-h4.Disadvantages
+### Disadvantages
 
-# I must maintain the servers
-# I must perform regular backups
+* I must maintain the servers
+* I must perform regular backups
  
-The decision on using a VPN to access your remote development machine or running everything locally doesn’t really affect the next important part of working remotely… communicating with your co-workers.  We use tools like skype, readytalk, and Screenhero.  Some people, both remote and local, have started using Google Docs to collaborate on documents.  
-
-In the next part of this series I’ll discuss how these tools are used, along with topics such as working hours and the home office.
+The decision on using a VPN to access your remote development machine or running everything locally doesn't really affect the next important part of working remotely… communicating with your co-workers.  We use tools like skype, readytalk, and Screenhero.  Some people, both remote and local, have started using Google Docs to collaborate on documents.
