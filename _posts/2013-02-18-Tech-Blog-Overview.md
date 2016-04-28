@@ -23,7 +23,7 @@ I considered several options, including blog authoring tools like Blogger, Drupa
 2. With [GitHub Pages](http://pages.github.com/), I could host the site easily
 3. GitHub Pages utilizes [Jekyll](https://github.com/mojombo/jekyll/wiki) for site generation:
     * Templates for layouts of pages and partials
-    * Utilizes -Textile- Markdown for post rendering
+    * Utilizes ~~Textile~~ Markdown for post rendering
 4. GitHub Pages utlizes [Liquid](http://liquidmarkup.org/) for logic and variables
 
 ### Why Textile and not Markdown?
@@ -38,7 +38,7 @@ Another great out of the box feature of GitHub Pages is their support of [SASS](
 
 ### Syntax Highlighting
 
-We are using Pygments for our code highlighting here in our blog; I find it easy, and plenty nice.
+We are using ~~Pygments~~ Rouge for our code highlighting here in our blog. **Update:** Github Pages moved from Pygments to Rouge.
 
 ## Responsive Web
 
